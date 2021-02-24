@@ -11,6 +11,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'preservim/tagbar'
 Plug 'godlygeek/tabular'
 Plug 'moll/vim-bbye'
+Plug 'yggdroot/indentLine'
 
 " === Styles, theming === "
 Plug 'vim-airline/vim-airline-themes'
@@ -82,7 +83,11 @@ autocmd vimenter * ++nested colorscheme gruvbox
 :set number 
 :set relativenumber
 
+" Indentation markers
 
+"let g:indentLine_setColors = 0 -> use theme colours, commented to default
+"let g:indentLine_char = '.' -> change default indent char
+"
 " ============================================================================ "
 " ===                             PLUGIN SETTINGS                          === "
 " ============================================================================ "
@@ -292,7 +297,10 @@ endfunction
 " ignore case when searching
 set ignorecase
 
-
+" Disable backups and swap files
+set nobackup
+set nowritebackup
+set noswapfile
 
 
 
