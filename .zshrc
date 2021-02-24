@@ -1,3 +1,13 @@
+# Current active theme 
+ZSH_THEME="spaceship"
+prompt_dir() {
+  #prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment blue $CURRENT_FG '%2~'
+}
+
+# Source syntax highlighting
+source /Users/thomasbishop/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 #.....................................OH MY ZSH...............................................#
 
 # Path to oh-my-zsh installation.
@@ -26,18 +36,6 @@ alias gitwho="{git config user.name && git config user.email}"
 # Log commits in colourful graph
 alias gitgraph="{git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all}"
 
-
-#.....................................UI......................................................#
-
-# Current active theme 
-ZSH_THEME="spaceship"
-prompt_dir() {
-  #prompt_segment blue $CURRENT_FG '%~'
-  prompt_segment blue $CURRENT_FG '%2~'
-}
-
-# Source syntax highlighting
-source /Users/thomasbishop/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #.....................................FZF......................................................#
 
