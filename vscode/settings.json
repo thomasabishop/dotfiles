@@ -1,0 +1,87 @@
+{
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.fontWeight": 400,
+  "editor.formatOnPaste": false,
+  "editor.wordWrap": "on",
+  "terminal.integrated.fontFamily": "Jetbrains Mono",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "500",
+  "debug.console.fontFamily": "Jetbrains Mono",
+  "debug.console.fontSize": 12,
+  "editor.cursorBlinking": "smooth",
+  "files.trimFinalNewlines": true,
+  "vim.statusBarColorControl": false,
+  "vim.leader": "/",
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#18e00040",
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "flame",
+    "type": "text",
+    "foreground": "#e0800980",
+    "gutterIcon": true,
+    "opacity": 50,
+    "iconColour": "#e08009"
+  },
+
+  "markdown-preview-github-styles.colorTheme": "light",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.list.smoothScrolling": true,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "meta.object-literal.key.js",
+        "settings": {
+          "foreground": "#2f7e25"
+        }
+      }
+    ]
+  },
+  "workbench.colorCustomizations": {
+    "scrollbar.shadow": "#ffffff00"
+  },
+  "editor.smoothScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.tabs.enabled": false,
+  "npm.enableRunFromFolder": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "workbench.colorTheme": "Alien Blood ",
+  "workbench.startupEditor": "none",
+  "editor.formatOnSave": true
+}
