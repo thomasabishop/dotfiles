@@ -1,16 +1,29 @@
 {
-  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
   "editor.wordWrap": "on",
-  "terminal.integrated.fontFamily": "Jetbrains Mono",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeight": "500",
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.tabs.enabled": true,
   "debug.console.fontFamily": "Jetbrains Mono",
   "debug.console.fontSize": 12,
-  "editor.cursorBlinking": "smooth",
+  "explorer.confirmDelete": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "scrollbar.shadow": "#ffffff00"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "npm.enableRunFromFolder": true,
+  "security.workspace.trust.untrustedFiles": "open",
   "files.trimFinalNewlines": true,
   "vim.statusBarColorControl": false,
   "vim.leader": "/",
@@ -25,16 +38,12 @@
     "opacity": 50,
     "iconColour": "#e08009"
   },
-
   "markdown-preview-github-styles.colorTheme": "light",
   "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.iconTheme": "material-icon-theme",
   "explorer.confirmDragAndDrop": false,
-  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.list.smoothScrolling": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -42,20 +51,9 @@
         "settings": {
           "fontStyle": "italic"
         }
-      },
-      {
-        "scope": "meta.object-literal.key.js",
-        "settings": {
-          "foreground": "#2f7e25"
-        }
       }
     ]
   },
-  "workbench.colorCustomizations": {
-    "scrollbar.shadow": "#ffffff00"
-  },
-  "editor.smoothScrolling": true,
-  "editor.bracketPairColorization.enabled": true,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -72,16 +70,12 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.tabs.enabled": false,
-  "npm.enableRunFromFolder": true,
-  "security.workspace.trust.untrustedFiles": "open",
+
   "gitlens.advanced.messages": {
     "suppressGitMissingWarning": true
   },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "workbench.colorTheme": "Alien Blood ",
-  "workbench.startupEditor": "none",
-  "editor.formatOnSave": true
+  "workbench.colorTheme": "Visual Studio Light"
 }
