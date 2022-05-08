@@ -1,0 +1,3 @@
+# Launch X on login (and load i3)
+startx
+xmodmap ./.Xmodmap
