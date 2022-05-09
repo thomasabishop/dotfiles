@@ -13,7 +13,7 @@
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.tabs.enabled": true,
-  "debug.console.fontFamily": "Jetbrains Mono",
+  "debug.console.fontFamily": "Fira Code",
   "debug.console.fontSize": 12,
   "explorer.confirmDelete": false,
   "workbench.list.smoothScrolling": true,
@@ -77,5 +77,6 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "workbench.colorTheme": "Visual Studio Light"
+  "workbench.colorTheme": "Alien Blood - No bold or italics",
+  "window.titleBarStyle": "custom"
 }
