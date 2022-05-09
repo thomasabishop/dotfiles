@@ -60,6 +60,9 @@ setxkbmap gb
 # Set custom keybindings
 xmodmap ~/.Xmodmap 
 
+# Set background
+feh --bg-fill /home/thomas/wallpapers/plain-arch.png
+
 # Start i3 window manager 
 exec i3
 

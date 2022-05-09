@@ -190,3 +190,20 @@ for_window [class="^.*"] border pixel 1
 
 gaps inner 10
 gaps outer 5
+
+# Theming 
+
+set $yellow		#717f24
+set $green		#2f7e25
+set $brightGreen	#18e000
+set $text		#637d75 
+set $red 		#7f2b27
+set $blank		#000000
+
+# class                 border backgr text indic. child_border
+client.focused          $blank $green $blank $green
+client.focused_inactive $blank $yellow $blank $yellow
+client.unfocused        $blank $text $blank $text
+client.urgent           $blank $red $blank $red
+client.placeholder      $blank $blank $blank $blank
+client.background       $blank
