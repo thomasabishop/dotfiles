@@ -79,8 +79,9 @@ prompt_end() {
   else
     echo -n "%{%k%}"
   fi
-  echo -n "%{%f%}"
-  CURRENT_BG=''
+	#echo -n "\n%{%f%}"
+	echo -n "\n%{%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{%f%}" 
+	CURRENT_BG=''
 }
 
 ### Prompt components
@@ -88,7 +89,7 @@ prompt_end() {
 
 # OS: display Arch logo just because 
 prompt_os() {
-	prompt_segment red black ""
+	prompt_segment green black ""
 }
 
 
