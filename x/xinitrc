@@ -61,7 +61,7 @@ setxkbmap gb
 xmodmap ~/.Xmodmap 
 
 # Set background
-feh --bg-fill /home/thomas/wallpapers/plain-arch.png
+feh --bg-fill /home/thomas/wallpapers/alien-blank.png
 
 # Start i3 window manager 
 exec i3
