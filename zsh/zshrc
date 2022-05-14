@@ -29,7 +29,7 @@ case "$OSTYPE" in
 	;;
 	linux*)
 		# Linux specific 
-		ZSH_THEME=agnoster
+		ZSH_THEME=agnoster-customized
 	;;
 esac 
 
