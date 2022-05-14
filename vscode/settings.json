@@ -77,6 +77,6 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "workbench.colorTheme": "Alien Blood - No bold or italics",
+  "workbench.colorTheme": "Default Light+",
   "window.titleBarStyle": "custom"
 }
