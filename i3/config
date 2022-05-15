@@ -14,7 +14,7 @@ set $sup Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font Roboto 8
+font 'Roboto' 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -85,11 +85,6 @@ bindsym $mod+Shift+semicolon move right
 # bindsym $mod+Shift+Right move right
 
 
-# split in horizontal orientation
-bindsym $mod+Shift+Right split h
-
-# split in vertical orientation
-bindsym $mod+Shift+Down split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -100,10 +95,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+f floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -183,7 +178,23 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# --- Status bar --- #
+# --- Key binding overrides --- #
+
+# split in horizontal orientation
+bindsym $mod+Ctrl+h split v
+
+# split in vertical orientation
+bindsym $mod+Ctrl+v split h
+
+# --- Task switcher (Rofi) -#
+
+# Launch window switcher
+bindsym $mod+space exec rofi -show window
+
+# Launch applications 
+bindsym $sup+space exec rofi -show run
+
+# --- Status bar (Polybar) --- #
 
 # Launch Polybar on init instead of default i3bar: 
 
