@@ -52,7 +52,16 @@ fi
 #### Custom ########
 
 # Set external monitor config 
-xrandr --output VGA1 --primary --above LVDS1 
+if [[ "$(xrandr | awk '/^VGA/ { print $2 }')" == "connected" ]]; then
+        xrandr --output VGA1 --primary --above LVDS1
+elif [[ "$(xrandr | awk '/^DP1/ { print $2 }')" == "connected" ]];then  
+        xrandr  --output DP1 --primary --above LVDS1
+else :
+fi
+
+# xrandr --output VGA1 --primary --above LVDS1 
+# xrandr --output DP1 --primary --above LVDS1
+#source "{$HOME}/bash_scripts/connect_monitors.sh"
 
 # Set UK keyboard
 setxkbmap gb
