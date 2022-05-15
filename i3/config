@@ -186,6 +186,11 @@ bindsym $mod+Ctrl+h split v
 # split in vertical orientation
 bindsym $mod+Ctrl+v split h
 
+# --- Dropdown terminal (Guake) -#
+
+# Set Guake to work as floating window
+for_window [instance="guake"] floating enable
+
 # --- Task switcher (Rofi) -#
 
 # Launch window switcher
@@ -193,6 +198,8 @@ bindsym $mod+space exec rofi -show window
 
 # Launch applications 
 bindsym $sup+space exec rofi -show run
+
+
 
 # --- Status bar (Polybar) --- #
 
