@@ -176,7 +176,7 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "resize"w
 
 # --- Key binding overrides --- #
 
@@ -186,18 +186,16 @@ bindsym $mod+Ctrl+h split v
 # split in vertical orientation
 bindsym $mod+Ctrl+v split h
 
-# --- Dropdown terminal (Guake) -#
-
 # Set Guake to work as floating window
 for_window [instance="guake"] floating enable
 
 # --- Task switcher (Rofi) -#
 
 # Launch window switcher
-bindsym $mod+space exec rofi -show window
+bindsym $mod+space exec rofi -show drun
 
 # Launch applications 
-bindsym $sup+space exec rofi -show run
+bindsym $mod+Tab exec rofi -show window
 
 
 

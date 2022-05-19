@@ -145,4 +145,5 @@ configuration {
       sorting-method:    "name";
   }
 }
-@theme "/usr/share/rofi/themes/lb.rasi"
+//@theme "/home/thomas/.local/share/rofi/themes/rounded-gray-dark.rasi"
+@theme "/home/thomas/.local/share/rofi/themes/alien-blood.rasi"
