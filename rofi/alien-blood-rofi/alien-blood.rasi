@@ -1,0 +1,18 @@
+/*******************************************************************************
+ * ALIEN BLOOD THEME FOR ROFI 
+ * User                 : ArchBish            
+ * Forked From           : https://github.com/lr-tech/rofi-themes-collection
+ *******************************************************************************/
+
+* {
+    bg0:    #000e07;
+    bg1:    #0f1610;
+    bg2:    #637d75;
+    bg3:    #2f7e25;
+    fg0:    #637d75;
+    fg1:    #637d75;
+    fg2:    #717f24;
+    fg3:    #637d75;
+}
+
+@import "rounded-common.rasi"
