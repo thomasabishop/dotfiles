@@ -46,7 +46,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec kitty
 bindsym $mod+Return exec kitty
 
 # kill focused window
@@ -195,10 +195,11 @@ bindsym $mod+Tab exec rofi -show window # Rofi window-switcher
 
 # THEMING
 
-gaps inner 5
-gaps outer 8
+border_radius 6
+gaps inner 4
+gaps outer 3
 
-for_window [class="^.*"] border pixel 2 # Remove header on windows
+for_window [class="^.*"] border pixel 0 # Remove header on windows
 
 set $yellow		#717f24
 set $green		#2f7e25
