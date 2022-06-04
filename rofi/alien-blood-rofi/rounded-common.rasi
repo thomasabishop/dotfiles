@@ -6,7 +6,6 @@
 
 * {
     font:   "Inter Medium 11";
-
     background-color:   transparent;
     text-color:         @fg0;
     margin:     0px;
@@ -24,17 +23,17 @@ window {
 
 mainbox {
     padding:    15px;
-    border-color:       @bg3;
-    border:         0px;
-    border-radius:  6px;
+    border-color:       @bg4;
+    border:         2px;
+    border-radius:  2px;
 }
 
 inputbar {
     background-color:   @bg1;
-    border-color:       @bg3;
+    border-color:       @bg4;
     border:         1px;
     border-radius:  2px;
-    padding:    8px 16px;
+    padding:    8px 4px;
     spacing:    8px;
     children:   [ prompt, entry ];
 }
@@ -62,7 +61,7 @@ textbox {
 listview {
     background-color:   transparent;
     margin:     12px 0 0;
-    lines:      8;
+    lines:      3;
     columns:    1;
     fixed-height: false;
 }

@@ -6,7 +6,8 @@ configuration {
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
 show-icons: true;
-/*	terminal: "rofi-sensible-terminal";*/
+icon-theme: "breeze_dark";
+terminal: "rofi-sensible-terminal";
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
@@ -14,7 +15,6 @@ show-icons: true;
 /*	run-shell-command: "{terminal} -e {cmd}";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-icon-theme: "breeze-dark"  ;
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
@@ -58,7 +58,7 @@ window-thumbnail: true;
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-/*	display-drun: ;*/
+	display-drun: "" ;
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
@@ -99,7 +99,7 @@ window-thumbnail: true;
 /*	kb-ellipsize: "Alt+period";*/
 /*	kb-toggle-case-sensitivity: "grave,dead_grave";*/
 /*	kb-toggle-sort: "Alt+grave";*/
-/*	kb-cancel: "Escape,Control+g,Control+bracketleft";*/
+/*	kb-cancel: "Escape,Control+g,Control+bracketleft,Alt+Space";*/
 /*	kb-custom-1: "Alt+1";*/
 /*	kb-custom-2: "Alt+2";*/
 /*	kb-custom-3: "Alt+3";*/
