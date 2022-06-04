@@ -8,15 +8,7 @@ sysmodmap=/etc/X11/xinit/.Xmodmap
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
-
-
-
-
-
-
-
     xrdb -merge $sysresources
-
 fi
 
 if [ -f $sysmodmap ]; then
@@ -24,13 +16,6 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-
-
-
-
-
-
-
     xrdb -merge "$userresources"
 
 fi
@@ -77,9 +62,8 @@ setxkbmap gb
 
 # Set custom keybindings
 xmodmap ~/.Xmodmap 
-
 # Set background
-feh --bg-fill /home/thomas/wallpapers/arpanet_wallpaper/svg/green.svg
+feh --bg-fill /home/thomas/wallpapers/arpanet/svg/blue.svg
 
 # Start i3 window manager 
 exec i3

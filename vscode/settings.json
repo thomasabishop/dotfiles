@@ -9,11 +9,11 @@
   "editor.smoothScrolling": true,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
-  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "Liga Liberation Mono",
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.tabs.enabled": true,
-  "debug.console.fontFamily": "Fira Code",
+  "debug.console.fontFamily": "Liga Liberation Mono",
   "debug.console.fontSize": 12,
   "explorer.confirmDelete": false,
   "workbench.list.smoothScrolling": true,
@@ -38,6 +38,7 @@
     "opacity": 50,
     "iconColour": "#e08009"
   },
+  "markdown.styles": ["markdown-styles.css"],
   "markdown-preview-github-styles.colorTheme": "light",
   "liveServer.settings.donotShowInfoMsg": true,
   "explorer.confirmDragAndDrop": false,
@@ -49,7 +50,7 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       }
     ]
