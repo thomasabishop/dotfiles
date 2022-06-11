@@ -1,2 +1,4 @@
 .nvimlog
+/polybar/secret.txt
 spotifyd/spotifyd.conf
+polybar/polybar_scripts/wakatime_status/query_wakatime.sh

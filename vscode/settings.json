@@ -76,7 +76,7 @@
     "suppressGitMissingWarning": true
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "shakram02.bash-beautify"
   },
   "workbench.colorTheme": "Alien Blood ",
   "window.titleBarStyle": "custom"
