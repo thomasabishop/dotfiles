@@ -53,6 +53,7 @@ elif [[ "$(xrandr | awk '/^DP1/ { print $2 }')" == "connected" ]];then
         xrandr  --output DP1 --primary --above eDP1
 elif [[ "$(xrandr | awk '/^HDMI1/ { print $2 }')" == "connected" ]];then  
         xrandr  --output HDMI1 --primary --above eDP1  
+
 else :
 fi
 
