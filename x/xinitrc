@@ -17,7 +17,6 @@ fi
 
 if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
-
 fi
 
 if [ -f "$usermodmap" ]; then
@@ -68,4 +67,3 @@ feh --bg-fill /home/thomas/wallpapers/arpanet/svg/blue.svg
 
 # Start i3 window manager 
 exec i3
-
