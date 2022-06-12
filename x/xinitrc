@@ -51,7 +51,7 @@ if [[ "$(xrandr | awk '/^VGA/ { print $2 }')" == "connected" ]]; then
 elif [[ "$(xrandr | awk '/^DP1/ { print $2 }')" == "connected" ]];then  
         xrandr  --output DP1 --primary --above eDP1
 elif [[ "$(xrandr | awk '/^HDMI1/ { print $2 }')" == "connected" ]];then  
-        xrandr  --output HDMI1 --primary --above eDP1  
+        xrandr  --output HDMI1 --above eDP1  
 
 else :
 fi
@@ -63,7 +63,7 @@ setxkbmap gb
 # Set custom keybindings
 xmodmap ~/.Xmodmap 
 # Set background
-feh --bg-fill /home/thomas/wallpapers/arpanet/svg/blue.svg
+feh --bg-fill /home/thomas/wallpapers/arpanet/svg/green.svg
 
 # Start i3 window manager 
 exec i3

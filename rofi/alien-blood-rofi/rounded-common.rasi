@@ -61,7 +61,7 @@ textbox {
 listview {
     background-color:   transparent;
     margin:     12px 0 0;
-    lines:      3;
+    lines:      8;
     columns:    1;
     fixed-height: false;
 }

@@ -30,14 +30,6 @@
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "#18e00040",
-  "todo-tree.highlights.defaultHighlight": {
-    "icon": "flame",
-    "type": "text",
-    "foreground": "#e0800980",
-    "gutterIcon": true,
-    "opacity": 50,
-    "iconColour": "#e08009"
-  },
   "markdown.styles": ["markdown-styles.css"],
   "markdown-preview-github-styles.colorTheme": "light",
   "liveServer.settings.donotShowInfoMsg": true,
