@@ -1,19 +1,19 @@
 {
-  "editor.fontFamily": "Liga Liberation Mono",
+  "editor.fontFamily": "Jetbrains Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
-  "editor.fontWeight": 400,
+  "editor.fontSize": 13,
+  "editor.fontWeight": 300,
   "editor.formatOnPaste": false,
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
-  "terminal.integrated.fontFamily": "Liga Liberation Mono",
+  "terminal.integrated.fontFamily": "Jetbrains Mono",
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.tabs.enabled": true,
-  "debug.console.fontFamily": "Liga Liberation Mono",
+  "debug.console.fontFamily": "Jetbrains Mono",
   "debug.console.fontSize": 12,
   "explorer.confirmDelete": false,
   "workbench.list.smoothScrolling": true,
@@ -42,7 +42,7 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": ""
+          "fontStyle": "italic"
         }
       }
     ]
