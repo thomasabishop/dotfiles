@@ -32,7 +32,7 @@ case "$OSTYPE" in
 	linux*)
 		# Linux specific 
 		#ZSH_THEME=agnoster-customized
-		ZSH_THEME=spaceship
+		ZSH_THEME=robbyrussell
 		SPACESHIP_PACKAGE_SHOW=true
 		SPACESHIP_TIME_SHOW=true
 		SPACESHIP_NODE_SHOW=true

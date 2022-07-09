@@ -1,7 +1,7 @@
 {
   "editor.fontFamily": "Jetbrains Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.fontWeight": 300,
   "editor.formatOnPaste": false,
   "editor.wordWrap": "on",
