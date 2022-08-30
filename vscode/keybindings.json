@@ -29,11 +29,25 @@
     "command": "actions.find"
   },
   {
-    "key": "ctrl+oem_8",
+    "key": "ctrl+left",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "ctrl+b",
     "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.toggleAuxiliaryBar"
   }
 ]

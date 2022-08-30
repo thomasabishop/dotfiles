@@ -1,16 +1,17 @@
 {
-  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontFamily": "Liga Liberation Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
-  "editor.fontWeight": 300,
+  "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
-  "terminal.integrated.fontFamily": "Jetbrains Mono",
-  "terminal.integrated.fontSize": 11,
+  "editor.experimental.stickyScroll.enabled": true,
+  "terminal.integrated.fontFamily": "Liga Liberation Mono",
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.tabs.enabled": true,
   "debug.console.fontFamily": "Jetbrains Mono",
@@ -21,6 +22,13 @@
   "workbench.colorCustomizations": {
     "scrollbar.shadow": "#ffffff00"
   },
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "alert",
+    "background": "#112616",
+    "foreground": "#bde000"
+  },
+  "diffEditor.codeLens": true,
+  "git.mergeEditor": false,
   "workbench.iconTheme": "material-icon-theme",
   "npm.enableRunFromFolder": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -30,7 +38,7 @@
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "#18e00040",
-  "markdown.styles": ["markdown-styles.css"],
+  //"meridian.ignoreDirs": ["/img"],
   "markdown-preview-github-styles.colorTheme": "light",
   "liveServer.settings.donotShowInfoMsg": true,
   "explorer.confirmDragAndDrop": false,
@@ -42,7 +50,7 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       }
     ]
@@ -63,13 +71,24 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
+  "gitlens.currentLine.scrollable": false,
   "gitlens.advanced.messages": {
     "suppressGitMissingWarning": true
   },
   "[shellscript]": {
     "editor.defaultFormatter": "shakram02.bash-beautify"
   },
+  "window.titleBarStyle": "custom",
+  "npm.keybindingsChangedWarningShown": true,
+  "debug.onTaskErrors": "debugAnyway",
   "workbench.colorTheme": "Alien Blood ",
-  "window.titleBarStyle": "custom"
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
