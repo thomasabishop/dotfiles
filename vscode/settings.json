@@ -40,6 +40,7 @@
   "vim.highlightedyank.color": "#18e00040",
   //"meridian.ignoreDirs": ["/img"],
   "markdown-preview-github-styles.colorTheme": "light",
+  "markdown.styles": ["markdown-styles.css"],
   "liveServer.settings.donotShowInfoMsg": true,
   "explorer.confirmDragAndDrop": false,
   "[jsonc]": {
