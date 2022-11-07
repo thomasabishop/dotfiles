@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Liga Liberation Mono",
+  "editor.fontFamily": "Jetbrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": 400,
@@ -9,9 +9,8 @@
   "editor.smoothScrolling": true,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
-  "editor.experimental.stickyScroll.enabled": true,
-  "terminal.integrated.fontFamily": "Liga Liberation Mono",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Jetbrains Mono",
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.tabs.enabled": true,
   "debug.console.fontFamily": "Jetbrains Mono",
@@ -38,9 +37,12 @@
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "#18e00040",
-  //"meridian.ignoreDirs": ["/img"],
+  "meridian.ignoreDirs": ["img"],
   "markdown-preview-github-styles.colorTheme": "light",
-  "markdown.styles": ["markdown-styles.css"],
+  "markdown.experimental.editor.pasteLinks.enabled": true,
+  "markdown.experimental.updateLinksOnFileMove.enabled": "prompt",
+  "markdown.experimental.validate.fileLinks.enabled": "warning",
+  "markdown.experimental.validate.referenceLinks.enabled": "warning",
   "liveServer.settings.donotShowInfoMsg": true,
   "explorer.confirmDragAndDrop": false,
   "[jsonc]": {
@@ -52,6 +54,12 @@
         "scope": "comment",
         "settings": {
           "fontStyle": ""
+        }
+      },
+      {
+        "scope": ["meta.object-literal.key.js", "meta.object-literal.key.ts"],
+        "settings": {
+          "foreground": "#327f77"
         }
       }
     ]
@@ -82,7 +90,6 @@
   "window.titleBarStyle": "custom",
   "npm.keybindingsChangedWarningShown": true,
   "debug.onTaskErrors": "debugAnyway",
-  "workbench.colorTheme": "Alien Blood ",
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -91,5 +98,8 @@
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.stickyScroll.enabled": true,
+  "gitlens.views.branches.branches.layout": "list",
+  "workbench.colorTheme": "Alien Blood "
 }
