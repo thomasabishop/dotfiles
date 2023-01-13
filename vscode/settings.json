@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontFamily": "Jetbrains Mono Light",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": 400,
@@ -11,7 +11,7 @@
   "editor.bracketPairColorization.enabled": true,
   "terminal.integrated.fontFamily": "Jetbrains Mono",
   "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeight": "300",
   "terminal.integrated.tabs.enabled": true,
   "debug.console.fontFamily": "Jetbrains Mono",
   "debug.console.fontSize": 12,
@@ -26,9 +26,9 @@
     "background": "#112616",
     "foreground": "#bde000"
   },
+  "markdown-preview-enhanced.previewTheme": "atom-light.css",
   "diffEditor.codeLens": true,
   "git.mergeEditor": false,
-  "workbench.iconTheme": "material-icon-theme",
   "npm.enableRunFromFolder": true,
   "security.workspace.trust.untrustedFiles": "open",
   "files.trimFinalNewlines": true,
@@ -37,7 +37,7 @@
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "#18e00040",
-  "meridian.ignoreDirs": ["img"],
+  "meridian.ignoreDirs": ["_img", "_scripts", "_meta", "posts"],
   "markdown-preview-github-styles.colorTheme": "light",
   "markdown.experimental.editor.pasteLinks.enabled": true,
   "markdown.experimental.updateLinksOnFileMove.enabled": "prompt",
@@ -53,7 +53,7 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": ""
+          "fontStyle": "italic"
         }
       },
       {
@@ -84,9 +84,7 @@
   "gitlens.advanced.messages": {
     "suppressGitMissingWarning": true
   },
-  "[shellscript]": {
-    "editor.defaultFormatter": "shakram02.bash-beautify"
-  },
+
   "window.titleBarStyle": "custom",
   "npm.keybindingsChangedWarningShown": true,
   "debug.onTaskErrors": "debugAnyway",
@@ -101,5 +99,14 @@
   },
   "editor.stickyScroll.enabled": true,
   "gitlens.views.branches.branches.layout": "list",
-  "workbench.colorTheme": "Alien Blood "
+  "files.insertFinalNewline": true,
+  "cSpell.userWords": ["colour", "colours"],
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.colorTheme": "Alien Blood ",
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

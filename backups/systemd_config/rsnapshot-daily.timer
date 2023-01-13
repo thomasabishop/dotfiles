@@ -1,0 +1,12 @@
+# Source link location: /etc/systemd/system/rsnapshot-daily.timer
+[Unit]
+Description=rsnapshot daily backup
+
+[Timer]
+# Run every day at 5:30AM local time
+OnCalendar=05:30
+Persistent=true
+Unit=rsnapshot@daily.service
+
+[Install]
+WantedBy=timers.target

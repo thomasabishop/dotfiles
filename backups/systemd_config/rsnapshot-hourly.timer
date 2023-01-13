@@ -1,0 +1,12 @@
+# Source link location: /etc/systemd/system/rsnapshot-hourly.timer
+[Unit]
+Description=rsnapshot hourly backup
+
+[Timer]
+# Run every hour at 15mins past the hour
+OnCalendar=*:15
+Persistent=true
+Unit=rsnapshot@hourly.service
+
+[Install]
+WantedBy=timers.target
