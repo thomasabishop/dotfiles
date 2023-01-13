@@ -1,0 +1,40 @@
+# The list below can be generated with the following command `code --list-extensions | xargs -L 1 echo code --install-extension`
+# You can then read the file and loop through and execute each command
+# Last updated: 2022-12-16
+
+code --install-extension BeardedBear.beardedicons
+code --install-extension bierner.github-markdown-preview
+code --install-extension bierner.markdown-checkbox
+code --install-extension bierner.markdown-emoji
+code --install-extension bierner.markdown-footnotes
+code --install-extension bierner.markdown-mermaid
+code --install-extension bierner.markdown-preview-github-styles
+code --install-extension bierner.markdown-yaml-preamble
+code --install-extension bungcip.better-toml
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension GraphQL.vscode-graphql-syntax
+code --install-extension jeff-hykin.better-shellscript-syntax
+code --install-extension jock.svg
+code --install-extension mads-hartmann.bash-ide-vscode
+code --install-extension mquandalle.graphql
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.isort
+code --install-extension ms-python.python
+code --install-extension ms-python.vscode-pylance
+code --install-extension ms-toolsai.jupyter
+code --install-extension ms-toolsai.jupyter-keymap
+code --install-extension ms-toolsai.jupyter-renderers
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags
+code --install-extension ms-toolsai.vscode-jupyter-slideshow
+code --install-extension richie5um2.vscode-sort-json
+code --install-extension shakram02.bash-beautify
+code --install-extension sibiraj-s.vscode-scss-formatter
+code --install-extension steoates.autoimport
+code --install-extension stpn.vscode-graphql
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension ThomasBishop.alien-blood
+code --install-extension unifiedjs.vscode-mdx
+code --install-extension vscodevim.vim
+code --install-extension WakaTime.vscode-wakatime
+code --install-extension Zignd.html-css-class-completion
