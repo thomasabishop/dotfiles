@@ -1,7 +1,7 @@
 {
-  "editor.fontFamily": "Jetbrains Mono Light",
+  "editor.fontFamily": "PragmataPro Mono Liga",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.fontWeight": 400,
   "editor.formatOnPaste": false,
   "editor.wordWrap": "on",
@@ -9,24 +9,17 @@
   "editor.smoothScrolling": true,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
-  "terminal.integrated.fontFamily": "Jetbrains Mono",
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontWeight": "300",
+  "terminal.integrated.fontFamily": "PragmataPro Mono Liga",
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.tabs.enabled": true,
-  "debug.console.fontFamily": "Jetbrains Mono",
-  "debug.console.fontSize": 12,
+  "debug.console.fontFamily": "PragmataPro Mono Liga",
+  "debug.console.fontSize": 15,
   "explorer.confirmDelete": false,
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
     "scrollbar.shadow": "#ffffff00"
   },
-  "todo-tree.highlights.defaultHighlight": {
-    "icon": "alert",
-    "background": "#112616",
-    "foreground": "#bde000"
-  },
-  "markdown-preview-enhanced.previewTheme": "atom-light.css",
   "diffEditor.codeLens": true,
   "git.mergeEditor": false,
   "npm.enableRunFromFolder": true,
@@ -53,7 +46,7 @@
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": "italic"
+          "fontStyle": ""
         }
       },
       {
@@ -84,11 +77,20 @@
   "gitlens.advanced.messages": {
     "suppressGitMissingWarning": true
   },
-
-  "window.titleBarStyle": "custom",
   "npm.keybindingsChangedWarningShown": true,
   "debug.onTaskErrors": "debugAnyway",
-  "[markdown]": {
+  "editor.stickyScroll.enabled": true,
+  "gitlens.views.branches.branches.layout": "list",
+  "files.insertFinalNewline": true,
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.colorTheme": "Alien Blood ",
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+"[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
@@ -97,16 +99,4 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.stickyScroll.enabled": true,
-  "gitlens.views.branches.branches.layout": "list",
-  "files.insertFinalNewline": true,
-  "cSpell.userWords": ["colour", "colours"],
-  "workbench.iconTheme": "bearded-icons",
-  "workbench.colorTheme": "Alien Blood ",
-  "[shellscript]": {
-    "editor.defaultFormatter": "shakram02.bash-beautify"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
 }

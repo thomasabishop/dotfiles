@@ -6,46 +6,24 @@ alias grep="rg"
 alias chrome="google-chrome-stable"
 alias spot="ncspot"
 alias xhd="cd /run/media/thomas"
+alias cs-save="/home/thomas/repos/bash_scripts/automate_commit.sh"
+alias cs-clean=""
+alias cs-all=""
 # Set properties based on OS
 
-case "$OSTYPE" in
-	darwin*)
-		# Mac specific 
-		ZSH_THEME=spaceship
-		SPACESHIP_PACKAGE_SHOW=true
-		SPACESHIP_TIME_SHOW=true
-		SPACESHIP_NODE_SHOW=true
-		SPACESHIP_PACKAGE_SYMBOL=""
-		SPACESHIP_NODE_SYMBOL=""
-		SPACESHIP_PACKAGE_COLOR="#e08009"
-		SPACESHIP_GIT_BRANCH_COLOR="#00aae0"
-		SPACESHIP_DIR_COLOR="#18e000"
-		SPACESHIP_TIME_COLOR="#bde000"
-		SPACESHIP_EXEC_TIME_SHOW=true
-	;;
-	linux*)
-		# Linux specific 
-		#ZSH_THEME=agnoster-customized
-		ZSH_THEME=spaceship
-		SPACESHIP_PACKAGE_SHOW=true
-		SPACESHIP_TIME_SHOW=true
-		SPACESHIP_NODE_SHOW=true
-		SPACESHIP_PACKAGE_SHOW=true
-		SPACESHIP_TIME_SHOW=true
-		SPACESHIP_NODE_SHOW=true
-		SPACESHIP_PACKAGE_SYMBOL=""
-		SPACESHIP_NODE_SYMBOL="" 
-
-		;;
-esac 
-
-plugins=(git npm zsh-syntax-highlighting)
+ZSH_THEME=spaceship
+SPACESHIP_TIME_SHOW=false
+SPACESHIP_PROMPT_ASYNC=true
+SPACESHIP_CHAR_SYMBOL="▶ " 
+#SPACESHIP_CHAR_SUFFIX="}"
+plugins=(git npm zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
 source $ZSH/oh-my-zsh.sh
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-export LC_ALL=en_GB.UTF-8
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
