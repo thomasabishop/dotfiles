@@ -3,20 +3,20 @@ export ZSH="/home/thomas/.oh-my-zsh"
 alias vim="nvim"
 alias cat="bat"
 alias grep="rg" 
-alias chrome="google-chrome-stable"
-alias spot="ncspot"
 alias xhd="cd /run/media/thomas"
-alias cs-save="/home/thomas/repos/bash_scripts/automate_commit.sh"
-alias cs-clean=""
-alias cs-all=""
+alias cs-update="/home/thomas/repos/computer_science/_scripts/auto_save.sh"
+alias cs-query="/home/thomas/repos/computer_science/_scripts/query.sh"
 # Set properties based on OS
 
 ZSH_THEME=spaceship
 SPACESHIP_TIME_SHOW=false
 SPACESHIP_PROMPT_ASYNC=true
 SPACESHIP_CHAR_SYMBOL="▶ " 
-#SPACESHIP_CHAR_SUFFIX="}"
 plugins=(git npm zsh-autosuggestions zsh-syntax-highlighting)
+
+# Search against /home/thomas/repos/computer_science
+
+
 
 # User configuration
 
