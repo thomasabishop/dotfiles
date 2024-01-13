@@ -2,16 +2,16 @@ export ZSH="/home/thomas/.oh-my-zsh"
 
 alias vim="nvim"
 alias cat="bat"
-alias grep="rg" 
+alias grep="rg"
 alias xhd="cd /run/media/thomas"
-alias cs-update="/home/thomas/repos/computer_science/_scripts/auto_save.sh"
-alias cs-query="/home/thomas/repos/computer_science/_scripts/query.sh"
+alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
+alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
 # Set properties based on OS
 
 ZSH_THEME=spaceship
-SPACESHIP_TIME_SHOW=false
+SPACESHIP_TIME_SHOW=true
 SPACESHIP_PROMPT_ASYNC=true
-SPACESHIP_CHAR_SYMBOL="▶ " 
+SPACESHIP_CHAR_SYMBOL="▶ "
 plugins=(git npm zsh-autosuggestions zsh-syntax-highlighting)
 
 # Search against /home/thomas/repos/computer_science
@@ -27,3 +27,16 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+prompt_end() {
+  if [[ -n $CURRENT_BG ]]; then
+    echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
+  else
+    echo -n "%{%k%}"
+  fi
+  echo -n "\n%{%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{%f%}"
+  CURRENT_BG=''
+}

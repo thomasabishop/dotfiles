@@ -1,0 +1,14 @@
+TMUX
+    C-b - : split horiz
+    C-b \ : split vert
+    
+    tmux ls : view all sessions
+
+TELESCOPE
+    C-v : open in vertical split
+    Leader-ff: find files
+    Leader-bb: view and select buffers 
+    Leader-tt: view dir tree view
+    Leader-fg: live grep
+
+   

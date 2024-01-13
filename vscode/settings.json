@@ -1,52 +1,107 @@
 {
-  "editor.fontFamily": "PragmataPro Mono Liga",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 16,
-  "editor.fontWeight": 400,
-  "editor.formatOnPaste": false,
-  "editor.wordWrap": "on",
-  "editor.cursorBlinking": "smooth",
-  "editor.smoothScrolling": true,
-  "editor.formatOnSave": true,
-  "editor.bracketPairColorization.enabled": true,
-  "terminal.integrated.fontFamily": "PragmataPro Mono Liga",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.tabs.enabled": true,
-  "debug.console.fontFamily": "PragmataPro Mono Liga",
-  "debug.console.fontSize": 15,
-  "explorer.confirmDelete": false,
-  "workbench.list.smoothScrolling": true,
-  "workbench.startupEditor": "none",
-  "workbench.colorCustomizations": {
-    "scrollbar.shadow": "#ffffff00"
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "diffEditor.codeLens": true,
-  "git.mergeEditor": false,
-  "npm.enableRunFromFolder": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "files.trimFinalNewlines": true,
-  "vim.statusBarColorControl": false,
-  "vim.leader": "/",
-  "vim.useSystemClipboard": true,
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.color": "#18e00040",
-  "meridian.ignoreDirs": ["_img", "_scripts", "_meta", "posts"],
-  "markdown-preview-github-styles.colorTheme": "light",
-  "markdown.experimental.editor.pasteLinks.enabled": true,
-  "markdown.experimental.updateLinksOnFileMove.enabled": "prompt",
-  "markdown.experimental.validate.fileLinks.enabled": "warning",
-  "markdown.experimental.validate.referenceLinks.enabled": "warning",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "explorer.confirmDragAndDrop": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.console.fontFamily": "Jetbrains Mono",
+  "debug.console.fontSize": 14,
+  "debug.onTaskErrors": "debugAnyway",
+  "diffEditor.codeLens": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.fontFamily": "Jetbrains Mono Medium",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  //  "editor.fontWeight": 700,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  //   "editor.lineHeight": 1.3,
+  "editor.minimap.enabled": true,
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.enabled": true,
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
         "scope": "comment",
         "settings": {
-          "fontStyle": ""
+          "fontStyle": "italic"
+        }
+      },
+      // {
+      //   "name": "Underline",
+      //   "scope": [],
+      //   "settings": {
+      //     "fontStyle": "underline"
+      //   }
+      // },
+      {
+        "name": "Italic",
+        "scope": [
+          "variable.parameter.ts",
+          "variable.parameter.js",
+          "storage.type.function",
+          "storage.type.class",
+          "markup.italic",
+          "markup.bold string",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Bold",
+        "scope": [
+          "meta.definition.function",
+          "entity.name.type.class",
+          "entity.name.section.markdown",
+          "markdown.heading",
+          "markup.bold",
+          "markup.heading | markup.heading entity.name",
+          "markup.heading.markdown punctuation.definition.heading.markdown",
+          "markup.bold markup.italic",
+          "markup.italic markup.bold",
+          "markup.quote markup.bold",
+          "markup.bold markup.italic string",
+          "markup.italic markup.bold string",
+          "markup.quote markup.bold string",
+          "string.other.link.title.markdown"
+        ],
+        "settings": {
+          "fontStyle": "bold"
         }
       },
       {
@@ -54,49 +109,117 @@
         "settings": {
           "foreground": "#327f77"
         }
+      },
+      {
+        "scope": [
+          "keyword.control.shell",
+          "keyword.control.do.shell",
+          "keyword.control.then.shell",
+          "keyword.control.elif.shell"
+        ],
+        "settings": {
+          "fontStyle": "underline"
+        }
+      },
+      {
+        "scope": ["entity.name.function.shell", "meta.shebang.shell"],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": ["storage.type.function.shell"],
+        "settings": {
+          "fontStyle": ""
+        }
       }
     ]
   },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.minimap.enabled": true,
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.currentLine.scrollable": false,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  // "markdown.styles": [
+  //   "https://tbishop.s3.eu-west-2.amazonaws.com/vscode-markdown-styles.css"
+  // ],
+  "explorer.confirmDragAndDrop": false,
+  "files.insertFinalNewline": true,
+  "git.mergeEditor": false,
   "gitlens.advanced.messages": {
     "suppressGitMissingWarning": true
   },
-  "npm.keybindingsChangedWarningShown": true,
-  "debug.onTaskErrors": "debugAnyway",
-  "editor.stickyScroll.enabled": true,
+  "gitlens.currentLine.scrollable": false,
   "gitlens.views.branches.branches.layout": "list",
-  "files.insertFinalNewline": true,
-  "workbench.iconTheme": "bearded-icons",
-  "workbench.colorTheme": "Alien Blood ",
-  "[shellscript]": {
-    "editor.defaultFormatter": "shakram02.bash-beautify"
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown-preview-github-styles.colorTheme": "light",
+  "markdown.experimental.editor.pasteLinks.enabled": true,
+  "markdown.updateLinksOnFileMove.enabled": "prompt",
+  "markdown.validate.enabled": true,
+  "markdown.validate.fileLinks.enabled": "error",
+  "markdown.validate.fileLinks.markdownFragmentLinks": "error",
+  "npm.enableRunFromFolder": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontFamily": "Jetbrains Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.tabs.enabled": true,
+  "vim.highlightedyank.enable": true,
+  "vim.leader": "/",
+  "vim.statusBarColorControl": false,
+  "vim.useSystemClipboard": true,
+  "workbench.colorCustomizations": {
+    "scrollbar.shadow": "#ffffff00"
+    // "terminal.background": "#0f1610"
   },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.iconTheme": "eq-material-theme-icons-deepforest",
+  "workbench.list.smoothScrolling": true,
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "terminal.integrated.allowChords": false,
+  "telemetry.telemetryLevel": "off",
+  "aws.telemetry": false,
+  "yaml.customTags": [
+    "ApplicationResourceGroup",
+    "ResourceGroupName",
+    "!GetAtt",
+    "!Sub",
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub sequence",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "files.exclude": {
+    "**/__pycache__": true
   },
-"[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.fontVariations": true,
+  "totalTypeScript.hideAllTips": false,
+  "totalTypeScript.hideBasicTips": true,
+  "eslint.run": "onSave",
+  "totalTypeScript.hiddenTips": ["passing-generics-to-types", "typeof"],
+  "workbench.colorTheme": "Alien Blood "
 }

@@ -50,24 +50,43 @@
     "key": "ctrl+right",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
+  // {
+  //   "key": "x x",
+  //   "command": "extension.vim_ctrl+t",
+  //   "when": "editorTextFocus && vim.active && vim.use<C-t> && !inDebugRepl"
+  // },
   {
-    "key": "tab",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    "key": "ctrl+t",
+    "command": "-extension.vim_ctrl+t",
+    "when": "editorTextFocus && vim.active && vim.use<C-t> && !inDebugRepl"
   },
   {
-    "key": "down",
-    "command": "-selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+tab",
-    "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "up",
-    "command": "-selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    "key": "ctrl+x",
+    "command": "-extension.vim_ctrl+x",
+    "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
   }
+  // {
+  //   "key": "tab",
+  //   "command": "selectNextSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  // },
+  // {
+  //   "key": "down",
+  //   "command": "-selectNextSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  // },
+  // {
+  //   "key": "ctrl+tab",
+  //   "command": "selectPrevSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  // },
+  // {
+  //   "key": "up",
+  //   "command": "-selectPrevSuggestion",
+  //   "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  // },
+  // {
+  //   "key": "shift+g+c",
+  //   "command": "editor.action.commentLine"
+  // }
 ]
