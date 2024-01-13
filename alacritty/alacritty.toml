@@ -1,0 +1,42 @@
+live_config_reload = true
+
+[window]
+	padding = { x = 10, y = 10 }
+	decorations_theme_variant = "Dark"
+
+[font]
+	normal = { family = "PragmataPro Mono" }
+	bold = { family = "PragmataPro Mono", style = "Bold" }
+	italic = { family = "PragmataProMono", style = "Italic" }
+	offset = { y = 0, x = 0 } # line spacing
+	size = 12
+
+[colors]
+	draw_bold_text_with_bright_colors = true
+	[colors.primary]
+		background = '#303030'
+		foreground = '#abb2bf'
+	[colors.normal]
+		black   = '#1e2127'
+		red     = '#e06c75'
+		green   = '#98c379'
+		yellow  = '#d19a66'
+		blue    = '#61afef'
+		magenta = '#c678dd'
+		cyan    = '#56b6c2'
+		white   = '#abb2bf'
+	[colors.bright]
+		black   = '#5c6370'
+		red     = '#e06c75'
+		green   = '#98c379'
+		yellow  = '#d19a66'
+		blue    = '#61afef'
+		magenta = '#c678dd'
+		cyan    = '#56b6c2'
+		white   = '#ffffff'
+
+[cursor]
+	style = { blinking = "On" }
+
+[terminal]
+	osc52 = "CopyPaste"
