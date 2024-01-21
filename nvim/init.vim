@@ -20,6 +20,7 @@ set mouse=
 set laststatus=2
 set termguicolors
 set noshowmode 
+set signcolumn=yes
 
 call plug#begin()
 Plug 'junegunn/vim-easy-align'
@@ -33,6 +34,9 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'mhinz/vim-startify'
 Plug 'vim-airline/vim-airline'
 Plug 'nvim-tree/nvim-web-devicons' 
+Plug 'kdheepak/lazygit.nvim'
+Plug 'airblade/vim-gitgutter'
+Plug 'mfussenegger/nvim-lint'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
@@ -54,3 +58,10 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 lua require'nvim-treesitter.configs'.setup{highlight={enable=true}}
+
+lua << EOF
+require('lint').linters_by_ft = {
+  markdown = {'vale',}
+}
+EOF
+
