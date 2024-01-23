@@ -12,17 +12,14 @@ ZSH_THEME=""
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_PROMPT_ASYNC=true
 SPACESHIP_CHAR_SYMBOL="▶ "
-plugins=(git npm zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 # Search against /home/thomas/repos/computer_science
-
 
 
 # User configuration
 
 source $ZSH/oh-my-zsh.sh
-
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -40,6 +37,5 @@ eval "$(pyenv init --path)"
 #   echo -n "\n%{%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{%f%}"
 #   CURRENT_BG=''
 # }
-
 
 eval "$(starship init zsh)"
