@@ -1,0 +1,26 @@
+[username]
+style_user = 'red bold'
+style_root = 'black bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
+
+[time]
+format = '[$time]($style) '
+disabled = false
+
+[os]
+disabled = false
+style = 'blue bold'
+
+[os.symbols]
+Arch = "  "
+
+
+[git_branch]
+format = '[$symbol$branch]($style) '
+
+[git_metrics]
+disabled = false
+[aws]
+disabled = true
