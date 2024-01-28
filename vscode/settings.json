@@ -221,5 +221,5 @@
   "totalTypeScript.hideBasicTips": true,
   "eslint.run": "onSave",
   "totalTypeScript.hiddenTips": ["passing-generics-to-types", "typeof"],
-  "workbench.colorTheme": "Alien Blood "
+  "workbench.colorTheme": "One Dark Pro"
 }
