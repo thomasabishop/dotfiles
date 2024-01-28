@@ -1,8 +1,12 @@
 live_config_reload = true
 
 [window]
-	padding = { x = 10, y = 10 }
-	decorations_theme_variant = "Dark"
+	padding = { x = 5, y = 0 }
+  decorations = "None"
+  dynamic_padding = true
+  opacity = 0.9
+  blur = true 
+  #decorations_theme_variant = "Dark"
 
 [font]
 	normal = { family = "PragmataPro Mono" }
@@ -14,7 +18,7 @@ live_config_reload = true
 [colors]
 	draw_bold_text_with_bright_colors = true
 	[colors.primary]
-		background = '#303030'
+    background = '#282c34'
 		foreground = '#abb2bf'
 	[colors.normal]
 		black   = '#1e2127'
@@ -34,9 +38,6 @@ live_config_reload = true
 		magenta = '#c678dd'
 		cyan    = '#56b6c2'
 		white   = '#ffffff'
-
-[cursor]
-	style = { blinking = "On" }
 
 [terminal]
 	osc52 = "CopyPaste"
