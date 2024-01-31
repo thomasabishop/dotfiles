@@ -1,0 +1,63 @@
+window {
+  margin: 0px;
+  border: 2px solid #5c6370;
+  background-color: #282c34;
+  border-radius: 4px;
+}
+
+#input {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  color: #abb2bf;
+  background-color: #4b5263;
+  font-size: 16px;
+  font-family: "PragmataPro Mono";
+  border-radius: 4px;
+  border: 2px solid #4b5263;
+}
+
+#input:focus {
+  /* border: 2px solid #61afef; */
+  box-shadow: none;
+}
+
+#inner-box {
+  margin: 10px;
+  border: none;
+  background-color: #282c34;
+}
+
+#outer-box {
+  width: 100px;
+  margin: 5px;
+  border: none;
+  background-color: #282c34;
+}
+
+#scroll {
+  margin: 0px;
+  border: none;
+}
+
+#text {
+  font-family: "PragmataPro Mono";
+  font-size: 16px;
+  margin: 5px;
+  border: none;
+  color: #abb2bf;
+}
+
+#text:selected {
+  color: #abb2bf;
+}
+
+#entry {
+  padding: 8px;
+}
+#entry:selected {
+  color: #abb2bf;
+  background-color: #4b5263;
+  border-radius: 4px;
+  box-shadow: none;
+}
