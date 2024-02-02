@@ -12,7 +12,7 @@ live_config_reload = true
 	normal = { family = "PragmataPro Mono" }
 	bold = { family = "PragmataPro Mono", style = "Bold" }
 	italic = { family = "PragmataPro Mono", style = "Italic" }
-	offset = { y = 1, x = 0 } # line spacing
+	offset = { y = 0, x = 0 } # line spacing
 	size = 12
 
 [colors]
