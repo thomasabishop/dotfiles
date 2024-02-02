@@ -29,17 +29,21 @@ end
 -- plugins to install
 return packer.startup(function(use)
 	-- packer can manage itself
+
 	use("wbthomason/packer.nvim")
+	-- git
+	use("kdheepak/lazygit.nvim")
+	use("tpope/vim-fugitive")
+	use("f-person/git-blame.nvim")
+	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	use("joshdick/onedark.vim")
 	use("junegunn/vim-easy-align")
 	use("junegunn/rainbow_parentheses.vim")
 	use("HiPhish/rainbow-delimiters.nvim")
-	use("tpope/vim-fugitive")
 	use("junegunn/gv.vim")
 	use("ap/vim-css-color")
 	use("wakatime/vim-wakatime")
 	use("psliwka/vim-smoothie")
-	use("kdheepak/lazygit.nvim")
 	use("nvim-lua/plenary.nvim")
 	use("szw/vim-maximizer")
 	use("tpope/vim-commentary")
@@ -94,9 +98,6 @@ return packer.startup(function(use)
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
-
-	-- git integration
-	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
 	-- GitHub Copilot
 

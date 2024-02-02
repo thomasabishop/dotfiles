@@ -1,0 +1,12 @@
+-- import gitblame safely
+local gitblame_status, gitblame = pcall(require, "gitblame")
+if not gitblame then
+	return
+end
+
+gitblame.setup({
+	message_template = "  <author> • <date> • <summary> • <sha>",
+	date_format = "%r (%x)",
+	message_when_not_committed = "",
+	gitblame_use_blame_commit_file_urls = true,
+})
