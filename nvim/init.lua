@@ -1,3 +1,14 @@
+vim.api.nvim_exec(
+	[[
+  autocmd BufRead,BufNewFile *.md set filetype=markdown
+]],
+	false
+)
+
+vim.cmd([[
+  autocmd BufRead,BufNewFile *.md set syntax=markdown
+]])
+
 require("thomas.plugins-setup")
 require("thomas.core.options")
 require("thomas.core.keymaps")

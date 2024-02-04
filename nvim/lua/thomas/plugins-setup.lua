@@ -31,9 +31,17 @@ return packer.startup(function(use)
 	-- packer can manage itself
 
 	use("wbthomason/packer.nvim")
+	use({
+		"aspeddro/pandoc.nvim",
+		config = function()
+			require("pandoc").setup()
+		end,
+	})
+
 	-- git
 	use("kdheepak/lazygit.nvim")
 	use("tpope/vim-fugitive")
+	use("tpope/vim-markdown")
 	use("f-person/git-blame.nvim")
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	use("joshdick/onedark.vim")

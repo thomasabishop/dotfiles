@@ -14,3 +14,8 @@ local function update_hl(group, tbl)
 end
 
 update_hl("Function", { bold = true })
+update_hl("markdownH1", { bold = true })
+update_hl("markdownH2", { bold = true })
+update_hl("markdownH3", { bold = true })
+update_hl("markdownH4", { bold = true })
+update_hl("markdownH5", { bold = true })
