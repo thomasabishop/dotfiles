@@ -6,12 +6,10 @@ alias grep="rg"
 alias xhd="cd /run/media/thomas"
 alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
 alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
+
 # Set properties based on OS
 
 ZSH_THEME=""
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_PROMPT_ASYNC=true
-SPACESHIP_CHAR_SYMBOL="▶ "
 plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 # Search against /home/thomas/repos/computer_science
@@ -19,6 +17,7 @@ plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
+source ~/dotfiles/.env
 source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="$HOME/.nvm"
@@ -28,14 +27,5 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
-# prompt_end() {
-#   if [[ -n $CURRENT_BG ]]; then
-#     echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
-#   else
-#     echo -n "%{%k%}"
-#   fi
-#   echo -n "\n%{%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{%f%}"
-#   CURRENT_BG=''
-# }
 
 eval "$(starship init zsh)"
