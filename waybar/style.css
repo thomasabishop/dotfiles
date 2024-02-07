@@ -3,7 +3,6 @@
   font-family: FontAwesome, "PragmataPro Mono Liga", Roboto, Helvetica, Arial,
     sans-serif;
   font-size: 16px;
-  font-weight: 600;
 }
 
 window#waybar {
@@ -16,6 +15,10 @@ window#waybar {
 
 window#waybar.hidden {
   opacity: 0.2;
+}
+
+tooltip {
+  font-weight: 400;
 }
 
 /*
@@ -48,19 +51,19 @@ button {
 
 #workspaces button.active {
   background-color: #c678dd;
-  color: #2d3436;
+  color: white;
 }
 
 #workspaces button {
-  padding: 0 6px;
+  padding: 0 3px;
   color: #2d3436;
   background-color: #abb2bf;
-  border-radius: 4px;
-  margin-right: 6px;
+  border-radius: 0px;
+  margin-right: 3px;
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: #e06c75;
 }
 
 #mode {
@@ -87,16 +90,19 @@ button {
 #mpd,
 #user,
 #bluetooth,
+#custom-wakatime,
 #custom-os {
+  font-weight: 600;
   padding: 3px 12px;
-  margin: 3px 3px 0;
+  margin: 0;
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 #window,
 #workspaces {
-  margin: 3px 3px 0;
+  margin: 0 3px 0;
+  font-weight: 600;
 }
 
 #window {
@@ -161,7 +167,7 @@ label:focus {
 }
 
 #memory {
-  color: #282c34;
+  color: #2d3436;
   background-color: #c678dd;
 }
 
@@ -197,11 +203,6 @@ label:focus {
 #pulseaudio.muted {
   background-color: #90b1b1;
   color: #e5c07b;
-}
-
-#wireplumber {
-  background-color: #fff0f5;
-  color: #000000;
 }
 
 #wireplumber.muted {
@@ -249,4 +250,9 @@ label:focus {
   background-color: #61afef;
   color: #282c34;
   font-size: 16px;
+}
+
+#custom-wakatime {
+  color: #2d3436;
+  background-color: #61afef;
 }
