@@ -36,15 +36,15 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "debug.console.fontFamily": "Jetbrains Mono",
-  "debug.console.fontSize": 14,
+  "debug.console.fontFamily": "PragmataPro Mono",
+  "debug.console.fontSize": 15,
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.codeLens": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "smooth",
-  "editor.fontFamily": "Jetbrains Mono Medium",
+  "editor.fontFamily": "PragmataPro Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   //  "editor.fontWeight": 700,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -158,8 +158,8 @@
   "markdown.validate.fileLinks.markdownFragmentLinks": "error",
   "npm.enableRunFromFolder": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.fontFamily": "Jetbrains Mono",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "PragmataPro Mono",
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.tabs.enabled": true,
   "vim.highlightedyank.enable": true,
   "vim.leader": "/",
@@ -221,5 +221,5 @@
   "totalTypeScript.hideBasicTips": true,
   "eslint.run": "onSave",
   "totalTypeScript.hiddenTips": ["passing-generics-to-types", "typeof"],
-  "workbench.colorTheme": "One Dark Pro"
+  "workbench.colorTheme": "Gruvbox Dark Medium"
 }
