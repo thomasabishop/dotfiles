@@ -39,6 +39,8 @@ return packer.startup(function(use)
 	})
 
 	-- git
+	use("ellisonleao/gruvbox.nvim")
+	use("sainnhe/gruvbox-material")
 	use("kdheepak/lazygit.nvim")
 	use("tpope/vim-fugitive")
 	use("tpope/vim-markdown")

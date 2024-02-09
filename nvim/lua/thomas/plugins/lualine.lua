@@ -3,13 +3,13 @@ if not status then
 	return
 end
 
-local lualine_onedark = require("lualine.themes.onedark")
+-- local lualine_onedark = require("lualine.themes.gruvbox")
 
 -- lualine_onedark.normal.c.bg = "#3c3836"
 
 lualine.setup({
 	options = {
-		theme = lualine_onedark,
+		theme = "gruvbox-material",
 		component_separators = { left = "|", right = "|" },
 		section_separators = { left = " ", right = " " },
 	},
@@ -26,7 +26,7 @@ lualine.setup({
 			},
 			{
 				"filename",
-				path = 3,
+				path = 4,
 			},
 		},
 	},

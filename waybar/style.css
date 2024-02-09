@@ -1,3 +1,6 @@
+/* blue yellow green orange purple aqua ..
+*/
+
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: FontAwesome, "PragmataPro Mono Liga", Roboto, Helvetica, Arial,
@@ -50,20 +53,20 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
 #workspaces button.active {
-  background-color: #c678dd;
-  color: white;
+  background-color: #d65d0e;
+  color: #ebdbb2;
 }
 
 #workspaces button {
   padding: 0 3px;
-  color: #2d3436;
-  background-color: #abb2bf;
+  color: #282828;
+  background-color: #a89984;
   border-radius: 0px;
   margin-right: 3px;
 }
 
 #workspaces button.urgent {
-  background-color: #e06c75;
+  background-color: #cc241d;
 }
 
 #mode {
@@ -120,18 +123,18 @@ button {
 }
 
 #clock {
-  background-color: #abb2bf;
-  color: #2d3436;
+  background-color: #98971a;
+  color: #282828;
 }
 
 #bluetooth {
-  background-color: #abb2bf;
-  color: #2d3436;
+  background-color: #d79921;
+  color: #282828;
 }
 
 #battery {
-  background-color: #98c379;
-  color: #282c34;
+  background-color: #d79921;
+  color: #282828;
 }
 
 #battery.charging,
@@ -162,28 +165,28 @@ label:focus {
 }
 
 #cpu {
-  background-color: #98c379;
-  color: #282c34;
+  background-color: #98971a;
+  color: #282828;
 }
 
 #memory {
-  color: #2d3436;
-  background-color: #c678dd;
+  background-color: #d65d0e;
+  color: #282828;
 }
 
 #disk {
-  color: #282c34;
-  background-color: #e5c07b;
+  color: #282828;
+  background-color: #b16286;
 }
 
 #backlight {
-  background-color: #61afef;
-  color: #282c34;
+  background-color: #a89984;
+  color: #282828;
 }
 
 #network {
-  background-color: #61afef;
-  color: #282c34;
+  background-color: #458588;
+  color: #282828;
 }
 
 #network.disconnected {
@@ -210,13 +213,13 @@ label:focus {
 }
 
 #custom-spotify {
-  background-color: #98c379;
-  color: #282c34;
+  background-color: #8ec07c;
+  color: #282828;
 }
 
 #temperature {
-  color: #282c34;
-  background-color: #56b6c2;
+  color: #282828;
+  background-color: #689d6a;
 }
 
 #temperature.critical {
@@ -253,6 +256,6 @@ label:focus {
 }
 
 #custom-wakatime {
-  color: #2d3436;
-  background-color: #61afef;
+  background-color: #458588;
+  color: #282828;
 }

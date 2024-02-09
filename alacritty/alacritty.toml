@@ -1,43 +1,74 @@
 live_config_reload = true
 
 [window]
-	padding = { x = 5, y = 0 }
-  decorations = "None"
-  dynamic_padding = true
-  opacity = 0.9
-  blur = true 
-  #decorations_theme_variant = "Dark"
+padding = { x = 5, y = 0 }
+decorations = "None"
+dynamic_padding = true
+opacity = 0.9
+blur = true
+#decorations_theme_variant = "Dark"
 
 [font]
-	normal = { family = "PragmataPro Mono" }
-	bold = { family = "PragmataPro Mono", style = "Bold" }
-	italic = { family = "PragmataPro Mono", style = "Italic" }
-	offset = { y = 0, x = 0 } # line spacing
-	size = 12
+normal = { family = "PragmataPro Mono" }
+bold = { family = "PragmataPro Mono", style = "Bold" }
+italic = { family = "PragmataPro Mono", style = "Italic" }
+offset = { y = 0, x = 0 }                                  # line spacing
+size = 12
 
+# Default colors
 [colors]
-	draw_bold_text_with_bright_colors = true
-	[colors.primary]
-    background = '#282c34'
-		foreground = '#abb2bf'
-	[colors.normal]
-		black   = '#1e2127'
-		red     = '#e06c75'
-		green   = '#98c379'
-		yellow  = '#d19a66'
-		blue    = '#61afef'
-		magenta = '#c678dd'
-		cyan    = '#56b6c2'
-		white   = '#abb2bf'
-	[colors.bright]
-		black   = '#5c6370'
-		red     = '#e06c75'
-		green   = '#98c379'
-		yellow  = '#d19a66'
-		blue    = '#61afef'
-		magenta = '#c678dd'
-		cyan    = '#56b6c2'
-		white   = '#ffffff'
+[colors.primary]
+# hard contrast background = = '#1d2021'
+background = '#282828'
+# soft contrast background = = '#32302f'
+foreground = '#ebdbb2'
 
-[terminal]
-	osc52 = "CopyPaste"
+# Normal colors
+[colors.normal]
+black = '#282828'
+red = '#cc241d'
+green = '#98971a'
+yellow = '#d79921'
+blue = '#458588'
+magenta = '#b16286'
+cyan = '#689d6a'
+white = '#a89984'
+
+# Bright colors
+[colors.bright]
+black = '#928374'
+red = '#fb4934'
+green = '#b8bb26'
+yellow = '#fabd2f'
+blue = '#83a598'
+magenta = '#d3869b'
+cyan = '#8ec07c'
+white = '#ebdbb2'
+
+
+# [colors]
+# 	draw_bold_text_with_bright_colors = true
+# 	[colors.primary]
+#     background = '#282c34'
+# 		foreground = '#abb2bf'
+# 	[colors.normal]
+# 		black   = '#1e2127'
+# 		red     = '#e06c75'
+# 		green   = '#98c379'
+# 		yellow  = '#d19a66'
+# 		blue    = '#61afef'
+# 		magenta = '#c678dd'
+# 		cyan    = '#56b6c2'
+# 		white   = '#abb2bf'
+# 	[colors.bright]
+# 		black   = '#5c6370'
+# 		red     = '#e06c75'
+# 		green   = '#98c379'
+# 		yellow  = '#d19a66'
+# 		blue    = '#61afef'
+# 		magenta = '#c678dd'
+# 		cyan    = '#56b6c2'
+# 		white   = '#ffffff'
+
+# [terminal]
+# 	osc52 = "CopyPaste"

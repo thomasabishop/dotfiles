@@ -1,6 +1,4 @@
--- set colorscheme to onedark with protected call
--- in case it isn't installed
-local status, _ = pcall(vim.cmd, "colorscheme onedark")
+local status, _ = pcall(vim.cmd, "colorscheme gruvbox-material")
 if not status then
 	print("Colorscheme not found!") -- print error if colorscheme not installed
 	return
@@ -13,9 +11,16 @@ local function update_hl(group, tbl)
 	vim.api.nvim_set_hl(0, group, new_hl)
 end
 
-update_hl("Function", { bold = true })
+update_hl("Function", { bold = false })
+-- update_hl("Comment", { italic = true })
+
 update_hl("markdownH1", { bold = true })
 update_hl("markdownH2", { bold = true })
 update_hl("markdownH3", { bold = true })
 update_hl("markdownH4", { bold = true })
 update_hl("markdownH5", { bold = true })
+
+vim.cmd("highlight String guifg='#8ec07c'")
+
+vim.g.gruvbox_material_background = "dark"
+vim.g.gruvbox_material_better_performance = 1
