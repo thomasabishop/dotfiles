@@ -1,4 +1,5 @@
-vim.g.onedark_terminal_italics = 1
+-- vim.g.onedark_terminal_italics = 1
+-- vim.g.gruvbox_material_enable_italic = 1
 
 local opt = vim.opt
 opt.number = true
@@ -26,3 +27,5 @@ opt.termguicolors = true
 opt.wrap = false
 opt.formatoptions = "cro"
 opt.backspace = "indent,eol,start"
+
+-- vim.g.gruvbox_material_enable_bold = 1
