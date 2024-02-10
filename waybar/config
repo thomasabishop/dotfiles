@@ -3,8 +3,8 @@
   "height": 30,
   "spacing": 4,
   "modules-left": [
+    "custom/os",
     "hyprland/workspaces"
-    
   ],
   "modules-right": [
     "custom/spotify",
@@ -14,8 +14,8 @@
     "memory",
     "disk",
     "temperature",
-		"backlight",
-		"custom/wakatime",
+    "backlight",
+    "custom/wakatime",
     "battery",
     "clock"
   ],

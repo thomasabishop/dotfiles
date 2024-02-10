@@ -8,30 +8,10 @@
   font-size: 16px;
 }
 
-window#waybar {
-  background-color: transparent;
-  border-bottom: none;
-  color: #ffffff;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
 tooltip {
   font-weight: 400;
+  border-radius: 0;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
   background-color: #3f3f3f;
@@ -50,11 +30,9 @@ button {
   border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-
 #workspaces button.active {
-  background-color: #d65d0e;
-  color: #ebdbb2;
+  background-color: #e78a4a;
+  color: #282828;
 }
 
 #workspaces button {
@@ -66,12 +44,7 @@ button {
 }
 
 #workspaces button.urgent {
-  background-color: #cc241d;
-}
-
-#mode {
-  background-color: #64727d;
-  border-bottom: 3px solid #ffffff;
+  background-color: #ea6962;
 }
 
 #clock,
@@ -98,7 +71,6 @@ button {
   font-weight: 600;
   padding: 3px 12px;
   margin: 0;
-  color: #ffffff;
   border-radius: 0px;
 }
 
@@ -106,10 +78,6 @@ button {
 #workspaces {
   margin: 0 3px 0;
   font-weight: 600;
-}
-
-#window {
-  color: #abb2bf;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -123,36 +91,29 @@ button {
 }
 
 #clock {
-  background-color: #98971a;
+  background-color: #a9b665;
   color: #282828;
 }
 
 #bluetooth {
-  background-color: #d79921;
+  background-color: #d8a657;
   color: #282828;
 }
 
 #battery {
-  background-color: #d79921;
+  background-color: #d8a657;
   color: #282828;
 }
 
 #battery.charging,
 #battery.plugged {
   color: #282c34;
-  background-color: #98c379;
-}
-
-@keyframes blink {
-  to {
-    background-color: #ffffff;
-    color: #282c34;
-  }
+  background-color: #a9b665;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #be5046;
-  color: #ffffff;
+  background-color: #ea6962;
+  color: #ddc7a1;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -160,23 +121,19 @@ button {
   animation-direction: alternate;
 }
 
-label:focus {
-  background-color: #000000;
-}
-
 #cpu {
-  background-color: #98971a;
+  background-color: #a9b665;
   color: #282828;
 }
 
 #memory {
-  background-color: #d65d0e;
+  background-color: #e78a4a;
   color: #282828;
 }
 
 #disk {
   color: #282828;
-  background-color: #b16286;
+  background-color: #d3869b;
 }
 
 #backlight {
@@ -185,58 +142,31 @@ label:focus {
 }
 
 #network {
-  background-color: #458588;
+  background-color: #7daea3;
   color: #282828;
 }
 
 #network.disconnected {
-  background-color: #e06c75;
+  background-color: #ea6962;
 }
 
 #user {
-  background-color: #e06c75;
+  background-color: #ea6962;
   color: #282c34;
-}
-
-#pulseaudio {
-  background-color: #e5c07b;
-  color: #282c34;
-}
-
-#pulseaudio.muted {
-  background-color: #90b1b1;
-  color: #e5c07b;
-}
-
-#wireplumber.muted {
-  background-color: #e06c75;
 }
 
 #custom-spotify {
-  background-color: #8ec07c;
+  background-color: #89b482;
   color: #282828;
 }
 
 #temperature {
   color: #282828;
-  background-color: #689d6a;
+  background-color: #89b482;
 }
 
 #temperature.critical {
   color: #282c34;
-  background-color: #e06c75;
-}
-
-#tray {
-  background-color: #2980b9;
-}
-
-#tray > .passive {
-  -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-  -gtk-icon-effect: highlight;
   background-color: #e06c75;
 }
 
@@ -250,12 +180,12 @@ label:focus {
 }
 
 #custom-os {
-  background-color: #61afef;
-  color: #282c34;
+  background-color: #473c29;
+  color: #d4be98;
   font-size: 16px;
 }
 
 #custom-wakatime {
-  background-color: #458588;
+  background-color: #7daea3;
   color: #282828;
 }
