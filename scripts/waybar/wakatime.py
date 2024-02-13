@@ -47,7 +47,7 @@ def main():
         tooltip = generate_tooltip(
             human_time, format_metric(langs), format_metric(projects)
         )
-        output["text"] = digital_time
+        output["text"] = digital_time or "No data"
         output["tooltip"] = tooltip
 
     except Exception as e:
