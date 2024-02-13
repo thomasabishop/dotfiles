@@ -82,17 +82,18 @@ button {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
+  /* margin-left: 0; */
 }
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
+  /* margin-right: 4; */
 }
 
 #clock {
   background-color: #a9b665;
   color: #282828;
+  margin-right: 6px;
 }
 
 #bluetooth {
@@ -183,6 +184,7 @@ button {
   background-color: #473c29;
   color: #d4be98;
   font-size: 16px;
+  margin-left: 6px;
 }
 
 #custom-wakatime {
