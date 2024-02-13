@@ -12,7 +12,7 @@ local function update_hl(group, tbl)
 end
 
 -- update_hl("Function", { bold = true })
-update_hl("Comment", { italic = true })
+-- update_hl("Comment", { italic = true })
 
 update_hl("markdownH1", { bold = true })
 update_hl("markdownH2", { bold = true })

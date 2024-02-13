@@ -5,8 +5,9 @@ if not gitblame then
 end
 
 gitblame.setup({
+	highlight_group = "Whitespace",
 	message_template = "  <author> • <date> • <summary> • <sha>",
 	date_format = "%r (%x)",
 	message_when_not_committed = "",
-	gitblame_use_blame_commit_file_urls = true,
+	use_blame_commit_file_urls = true,
 })
