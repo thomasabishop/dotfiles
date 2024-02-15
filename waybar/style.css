@@ -36,10 +36,11 @@ button {
 }
 
 #workspaces button {
+  font-weight: 600;
   padding: 0 3px;
   color: #282828;
   background-color: #a89984;
-  border-radius: 0px;
+  border-radius: 5px;
   margin-right: 3px;
 }
 
@@ -71,7 +72,7 @@ button {
   font-weight: 600;
   padding: 3px 12px;
   margin: 0;
-  border-radius: 0px;
+  border-radius: 5px;
 }
 
 #window,
@@ -109,7 +110,7 @@ button {
 #battery.charging,
 #battery.plugged {
   color: #282c34;
-  background-color: #a9b665;
+  background-color: #d8a657;
 }
 
 #battery.critical:not(.charging) {
