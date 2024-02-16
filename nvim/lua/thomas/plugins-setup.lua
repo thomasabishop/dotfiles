@@ -38,11 +38,11 @@ return packer.startup(function(use)
 		end,
 	})
 
-	-- git
 	use("ellisonleao/gruvbox.nvim")
 	use("sainnhe/gruvbox-material")
 	use("kdheepak/lazygit.nvim")
 	use("tpope/vim-fugitive")
+	use("rcarriga/nvim-notify")
 	use("tpope/vim-markdown")
 	use("f-person/git-blame.nvim")
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side

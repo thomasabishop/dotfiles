@@ -24,3 +24,5 @@ opt.termguicolors = true
 opt.wrap = false
 opt.formatoptions = "cro"
 opt.backspace = "indent,eol,start"
+
+vim.notify = require("notify")
