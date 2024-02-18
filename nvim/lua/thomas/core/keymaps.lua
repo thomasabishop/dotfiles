@@ -39,3 +39,4 @@ keymap.set("n", "<leader>zi", "<Cmd>ZkIndex<CR>")
 keymap.set("n", "<leader>zt", "<Cmd>ZkTags<CR>")
 keymap.set("n", "<leader>zb", "<Cmd>ZkBacklinks<CR>")
 keymap.set("n", "<leader>zl", "<Cmd>ZkLinks<CR>")
+
