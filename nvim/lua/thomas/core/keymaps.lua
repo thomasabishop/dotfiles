@@ -32,3 +32,10 @@ keymap.set("n", "<leader>fb", ":NvimTreeToggle<CR>")
 -- Git
 keymap.set("n", "<leader>lg", ":LazyGit<CR>")
 keymap.set("n", "<leader>gr", ":GV<CR>") -- Git graph view
+
+-- Nvim ZK
+keymap.set("n", "<leader>zk", "<Cmd>ZkNotes { sort = { 'modified' } }<CR>")
+keymap.set("n", "<leader>zi", "<Cmd>ZkIndex<CR>")
+keymap.set("n", "<leader>zt", "<Cmd>ZkTags<CR>")
+keymap.set("n", "<leader>zb", "<Cmd>ZkBacklinks<CR>")
+keymap.set("n", "<leader>zl", "<Cmd>ZkLinks<CR>")
