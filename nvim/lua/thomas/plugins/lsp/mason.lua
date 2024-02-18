@@ -32,6 +32,7 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"jsonls",
 		"yamlls",
+		"marksman",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -45,6 +46,7 @@ mason_null_ls.setup({
 		"eslint_d", -- ts/js linter
 		"black",
 		"pylint",
+		"marksman",
 	},
 
 	automatic_installation = true,
