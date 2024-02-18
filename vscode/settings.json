@@ -221,5 +221,6 @@
   "totalTypeScript.hideBasicTips": true,
   "eslint.run": "onSave",
   "totalTypeScript.hiddenTips": ["passing-generics-to-types", "typeof"],
-  "workbench.colorTheme": "Gruvbox Dark Medium"
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "git.openRepositoryInParentFolders": "never"
 }
