@@ -20,6 +20,7 @@ telescope.setup({
 			},
 		},
 		file_ignore_patterns = {
+			"img",
 			"node_modules",
 			".git",
 		},
