@@ -24,5 +24,5 @@ opt.termguicolors = true
 opt.wrap = false
 opt.formatoptions = "cro"
 opt.backspace = "indent,eol,start"
-opt.conceallevel = 1
+opt.conceallevel = 2
 vim.notify = require("notify")

@@ -11,4 +11,13 @@ obsidian_nvim.setup({
 			path = "~/repos/eolas/zk",
 		},
 	},
+	disable_frontmatter = true,
+	ui = {
+		bullets = { char = "•", hl_group = "ObsidianBullet" },
+		hl_groups = {
+			ObsidianBullet = { bold = false, fg = "#7daea3" },
+			ObsidianRefText = { underline = true, fg = "#e78a4e" },
+			ObsidianTag = { italic = true, fg = "#89b482" },
+		},
+	},
 })
