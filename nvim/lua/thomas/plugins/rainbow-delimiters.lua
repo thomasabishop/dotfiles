@@ -15,6 +15,6 @@ rd.setup({
 })
 
 -- change colour values to match One Dark
-vim.api.nvim_set_hl(0, "RainbowDelimiterViolet", { foreground = "#C678DD" })
-vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", { foreground = "#E5C07B" })
-vim.api.nvim_set_hl(0, "RainbowDelimiterCyan", { foreground = "#56B6C2" })
+vim.api.nvim_set_hl(0, "RainbowDelimiterViolet", { foreground = "#d3869b" })
+vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", { foreground = "#fabd2f" })
+vim.api.nvim_set_hl(0, "RainbowDelimiterCyan", { foreground = "#fe8019" })

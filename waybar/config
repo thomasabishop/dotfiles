@@ -1,13 +1,19 @@
 {
   "layer": "top",
+  "margin": "6 10 -3",
   "height": 30,
   "spacing": 4,
   "modules-left": [
     "custom/os",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "wlr/taskbar"
+  ],
+  "modules-center": [
+    "custom/spotify",
+    "custom/toggl",
+    "custom/wakatime"
   ],
   "modules-right": [
-    "custom/spotify",
     "network",
     "bluetooth",
     "cpu",
@@ -15,10 +21,27 @@
     "disk",
     "temperature",
     "backlight",
-    "custom/wakatime",
     "battery",
     "clock"
   ],
+  "wlr/taskbar": {
+    "format": "{icon} {name}",
+    "icon-size": 20,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "Alacritty"
+    ],
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+      "Firefox Web Browser": "Firefox",
+      "Foot Server": "Terminal"
+    }
+  },
   "keyboard-state": {
     "numlock": true,
     "capslock": true,
@@ -65,31 +88,30 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{: %H:%M  %d/%m/%Y}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "format": "{: %H:%M }",
+    "format-alt": "{: %d/%m/%Y}"
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": "  {usage}%",
     "tooltip": false
   },
   "memory": {
-    "format": " {}%"
+    "format": " {}%"
   },
   "temperature": {
     "critical-threshold": 80,
     "format": "{icon} {temperatureC}°C",
     "format-icons": [
-      "",
-      "",
-      ""
+      "󱩅",
+      "󱩅",
+      "󱩅",
     ]
   },
   "backlight": {
     "device": "acpi_video1",
-    "format": "{percent}% {icon}",
+    "format": "{icon} {percent}%",
     "format-icons": [
-      "",
+      "",
       "",
       "",
       "",
@@ -121,11 +143,11 @@
     "bat": "BAT2"
   },
   "network": {
-    "format-wifi": "  {essid} ({signalStrength}%)",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip-format": "{ifname} via {gwaddr} ",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "⚠ Disconnected",
+    "format-wifi": "󰖩  {essid} ({signalStrength}%)",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "format-linked": "{ifname} (No IP)",
+    "format-disconnected": "󰖪  Disconnected",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
@@ -151,13 +173,13 @@
   },
   "disk": {
     "interval": 30,
-    "format": " {percentage_used}%",
+    "format": " {percentage_used}%",
     "path": "/home"
   },
   "bluetooth": {
     "controller": "bluetoothctl",
-    "format": " {status}",
-    "format-connected": " {device_alias}",
+    "format": "{status}",
+    "format-connected": "{device_alias}",
     "format-connected-battery": " {device_alias} {device_battery_percentage}% ",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
@@ -180,7 +202,7 @@
   },
   "custom/spotify": {
     "exec": "/usr/bin/python3 $HOME/.config/waybar/resources/custom_modules/mediaplayer.py --player spotify",
-    "format": "{}  ",
+    "format": "{} ",
     "return-type": "json",
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
@@ -188,7 +210,13 @@
   },
   "custom/wakatime": {
     "exec": "source $HOME/dotfiles/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime.py",
-    "format": " {}",
+    "format": "  {}",
+    "return-type": "json",
+    "interval": 600
+  },
+  "custom/toggl": {
+    "exec": "source $HOME/dotfiles/.env && python3 $HOME/.config/waybar/resources/custom_modules/toggl_controller.py",
+    "format": "{}",
     "return-type": "json",
     "interval": 600
   }
