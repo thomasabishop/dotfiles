@@ -179,10 +179,10 @@
 	outline-color = #E78A43
 
 	# Width of the border in pixels.
-	border-width = 10
+	border-width = 6
 
 	# Border color
-	border-color = #3c3836
+	border-color = #98971A
 
 	# Radius of window corners in pixels.
 	corner-radius = 0
