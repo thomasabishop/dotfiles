@@ -13,11 +13,14 @@ obsidian_nvim.setup({
 	},
 	disable_frontmatter = true,
 	ui = {
-		bullets = { char = "•", hl_group = "ObsidianBullet" },
-		hl_groups = {
-			ObsidianBullet = { bold = false, fg = "#7daea3" },
-			ObsidianRefText = { underline = true, fg = "#e78a4e" },
-			ObsidianTag = { italic = true, fg = "#89b482" },
-		},
+		enable = false,
 	},
+	-- ui = {
+	-- 	bullets = { char = "•", hl_group = "ObsidianBullet" },
+	-- 	hl_groups = {
+	-- 		ObsidianBullet = { bold = false, fg = "#7daea3" },
+	-- 		ObsidianRefText = { underline = true, fg = "#e78a4e" },
+	-- 		ObsidianTag = { italic = true, fg = "#89b482" },
+	-- 	},
+	-- },
 })
