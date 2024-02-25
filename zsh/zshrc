@@ -8,11 +8,6 @@ alias zn="/home/thomas/dotfiles/scripts/new_zk_note.sh"
 alias xhd="cd /run/media/thomas"
 alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
 alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
-# Launch an application and return to terminal prompt 
-
-opn(){
-		nohup $1 &> /dev/null & ;
-}
 
 # Set properties based on OS
 
