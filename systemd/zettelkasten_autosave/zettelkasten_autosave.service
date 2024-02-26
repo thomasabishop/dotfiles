@@ -1,0 +1,10 @@
+[Unit]
+Description=Run ZK autosave every 15 minutes
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/thomas/repos/eolas/scripts/auto_save.sh
+
+[Install] 
+WantedBy=default.target
+
