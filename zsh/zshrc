@@ -3,8 +3,8 @@ export ZSH="/home/thomas/.oh-my-zsh"
 alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
-alias z="cd /home/thomas/repos/eolas/zk"
-alias zn="/home/thomas/dotfiles/scripts/new_zk_note.sh"
+alias z="cd /home/thomas/repos/eolas"
+alias zn="/home/thomas/repos/eolas/scripts/new_zk_note.sh"
 alias xhd="cd /run/media/thomas"
 alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
 alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
@@ -25,6 +25,7 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
