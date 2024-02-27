@@ -100,13 +100,14 @@ button {
 
 #clock {
   background-color: #689d6a;
-  color: #282828;
+
+  color: #1d2021;
   margin-right: 8px;
 }
 
 #bluetooth {
   background-color: #d65d0e;
-  color: #f2e5bc;
+  color: #1d2021;
 }
 
 #battery {
@@ -153,7 +154,7 @@ button {
 
 #network {
   background-color: #d65d0e;
-  color: #f2e5bc;
+  color: #1d2021;
 }
 
 #network.format.icons {
