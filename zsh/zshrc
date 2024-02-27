@@ -5,9 +5,10 @@ alias cat="bat"
 alias grep="rg"
 alias z="cd /home/thomas/repos/eolas"
 alias zn="/home/thomas/repos/eolas/scripts/new_zk_note.sh"
-alias xhd="cd /run/media/thomas"
-alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
-alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
+alias dot="cd /home/thomas/dotfiles"
+# alias xhd="cd /run/media/thomas"
+# alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
+# alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
 
 # Set properties based on OS
 
