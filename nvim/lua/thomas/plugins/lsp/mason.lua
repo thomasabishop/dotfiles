@@ -21,6 +21,7 @@ mason.setup()
 mason_lspconfig.setup({
 	-- list of servers for mason to install
 	ensure_installed = {
+		"clangd",
 		"tsserver",
 		"html",
 		"cssls",
@@ -41,6 +42,7 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
 	-- list of formatters & linters for mason to install
 	ensure_installed = {
+		"clang-format",
 		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
