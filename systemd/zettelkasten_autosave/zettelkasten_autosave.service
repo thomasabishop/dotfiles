@@ -3,6 +3,7 @@ Description=Run ZK autosave every 15 minutes
 
 [Service]
 Type=simple
+Environment=HOME=/home/thomas
 ExecStart=/bin/bash /home/thomas/repos/eolas/scripts/auto_save.sh
 
 [Install] 
