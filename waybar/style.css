@@ -1,6 +1,5 @@
 * {
-  font-family: FontAwesome, "PragmataPro Mono Liga", Roboto, Helvetica, Arial,
-    sans-serif;
+  font-family: "PragmataPro Mono Liga", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -29,8 +28,9 @@ button {
 
 #workspaces button {
   padding: 2px 3px;
-  color: #282828;
-  background-color: #928374;
+  /* color: #282828; */
+
+  background-color: #3c3836;
   margin-right: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -45,11 +45,12 @@ button {
   padding: 3px 8px;
   margin-top: 6px;
   margin-bottom: 6px;
+  border-bottom: 2px solid #3c3836;
 }
 
 #taskbar button.active {
-  background-color: #98971a;
-  color: #282828;
+  border-bottom: 2px solid #98971a;
+  color: #98971a;
 
   /* padding: 3px 10px;
   margin-top: 6px;
@@ -76,12 +77,22 @@ button {
 #user,
 #bluetooth,
 #custom-wakatime,
-#custom-toggl {
+#custom-toggl,
+#custom-logout {
   font-weight: 400;
   padding: 3px 10px;
   margin-left: 4px;
   margin-top: 6px;
   margin-bottom: 6px;
+}
+
+#custom-wakatime {
+}
+
+#custom-logout {
+  margin-right: 8px;
+  background-color: #ebdbb2;
+  color: #282828;
 }
 
 #custom-os {
@@ -99,30 +110,35 @@ button {
 }
 
 #clock {
-  background-color: #689d6a;
+  color: #fb4934;
 
-  color: #1d2021;
-  margin-right: 8px;
+  /* color: #1d2021; */
+  /* margin-right: 8px; */
+  margin-right: 4px;
 }
 
 #bluetooth {
-  background-color: #d65d0e;
-  color: #1d2021;
+  border-right: 1px solid #504945;
+  color: #689d6a;
+
+  /* color: #282828; */
 }
 
 #battery {
-  background-color: #b16286;
-  color: #f2e5bc;
+  color: #b16286;
+  border-right: 1px solid #504945;
+  padding-right: 14px;
+  /* color: #282828; */
 }
 
 #battery.charging,
 #battery.plugged {
-  background-color: #b16286;
-  color: #f2e5bc;
+  color: #b16286;
+  /* color: #282828; */
 }
 
 #battery.critical:not(.charging) {
-  background-color: #ea6962;
+  background-color: #fb4934;
   color: #f2e5bc;
   animation-name: blink;
   animation-duration: 0.5s;
@@ -132,37 +148,37 @@ button {
 }
 
 #cpu {
-  background-color: #d79921;
-  color: #282828;
+  color: #d79921;
+  /* color: #282828; */
   /* color: #282828; */
 }
 
 #memory {
-  background-color: #d79921;
-  color: #282828;
+  color: #d79921;
+  /* color: #282828; */
 }
 
 #disk {
-  background-color: #d79921;
-  color: #282828;
+  color: #d79921;
+  /* color: #282828; */
 }
 
 #backlight {
-  background-color: #b16286;
-  color: #f2e5bc;
+  color: #b16286;
+  /* color: #282828; */
 }
 
 #network {
-  background-color: #d65d0e;
-  color: #1d2021;
+  color: #689d6a;
+  /* color: #282828; */
 }
 
 #network.format.icons {
-  background-color: red;
+  background-color: #fb4934;
 }
 
 #network.disconnected {
-  background-color: #ea6962;
+  background-color: #fb4934;
 }
 
 #user {
@@ -176,22 +192,24 @@ button {
 }
 
 #temperature {
-  background-color: #d79921;
-  color: #282828;
+  color: #d79921;
+  border-right: 1px solid #504945;
+  padding-right: 14px;
 }
 
 #temperature.critical {
   color: #282c34;
-  background-color: #e06c75;
+  background-color: #fb4934;
 }
 
 #idle_inhibitor {
-  background-color: #2d3436;
+  background-color: #3c3836;
+  padding-right: 14px;
 }
 
 #idle_inhibitor.activated {
-  background-color: #abb2bf;
-  color: #2d3436;
+  background-color: #98971a;
+  color: #282828;
 }
 
 #custom-os {
@@ -201,9 +219,9 @@ button {
 }
 
 #custom-wakatime {
-  background-color: #b16286;
-  color: #f2e5bc;
-  margin-right: 4px;
+  color: #d65d0e;
+  border-right: 1px solid #504945;
+  padding-right: 14px;
 }
 
 #custom-toggl {
