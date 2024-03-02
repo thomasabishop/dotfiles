@@ -105,17 +105,15 @@
   },
   "backlight": {
     "device": "acpi_video1",
-    "format": "{icon} {percent}%",
+    "format": "{icon}{percent}%",
     "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+		  "󰪞 ",
+			"󰪟 ",
+			"󰪠 ",
+			"󰪡 ",
+		  "󰪢 ",
+			"󰪣 ",
+			"󰪥 ",
     ]
   },
   "battery": {
@@ -193,7 +191,8 @@
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
   },
   "custom/os": {
-    "format": "  archbish"
+    "format": "  archbish",
+    "format-alt": " "
   },
   "custom/wakatime": {
     "exec": "source $HOME/dotfiles/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime_waybar.py",
