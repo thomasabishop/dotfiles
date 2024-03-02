@@ -20,6 +20,8 @@
     "battery",
     "custom/wakatime",
     "clock",
+		"custom/timewarrior",
+		"idle_inhibitor",
     "custom/logout"
   ],
   "wlr/taskbar": {
@@ -198,6 +200,14 @@
     "format": "󰅱 {}",
     "return-type": "json",
     "interval": 600
+  },
+  "custom/timewarrior": {
+    "exec": "python3 $HOME/.config/waybar/resources/custom_modules/time_warrior_waybar.py",
+    "format": "{}",
+		"on-click": "timew stop && notify-send 'Time Warrior' 'Timer stopped'",
+		"on-click-right": "timew continue && notify-send 'Time Warrior' 'Timer resumed'",
+    "return-type": "json",
+    "interval": 5
   },
   "custom/logout": {
     "format": "󰠜",

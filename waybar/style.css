@@ -77,7 +77,7 @@ button {
 #user,
 #bluetooth,
 #custom-wakatime,
-#custom-toggl,
+#custom-timewarrior,
 #custom-logout {
   font-weight: 400;
   padding: 3px 10px;
@@ -225,10 +225,11 @@ button {
   color: #282828;
 }
 
-#custom-toggl.active {
+#custom-timewarrior.active {
   background-color: #98971a;
+  color: #282828;
 }
 
-#custom-toggl.inactive {
+#custom-timewarrior.inactive {
   background-color: #928374;
 }
