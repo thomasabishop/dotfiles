@@ -1,7 +1,4 @@
 #! /usr/local/bin/python3
-
-# Retrieve status bar data from WakaTime API and present in Waybar widget
-
 import requests
 import os
 import json
@@ -47,7 +44,7 @@ def main():
         tooltip = generate_tooltip(
             human_time, format_metric(langs), format_metric(projects)
         )
-        output["text"] = digital_time or "No data"
+        output["text"] = digital_time
         output["tooltip"] = tooltip
 
     except Exception as e:
