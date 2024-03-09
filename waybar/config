@@ -20,14 +20,15 @@
     "battery",
     "custom/wakatime",
     "clock",
-		"custom/timewarrior",
-		"idle_inhibitor",
+    "custom/timewarrior",
+    "custom/notification",
+    "idle_inhibitor",
     "custom/logout"
   ],
   "wlr/taskbar": {
-    "format": "{icon} {name}",
+    "format": "{icon}",
     "icon-size": 20,
-    "icon-theme": "Numix-Circle",
+    "icon-theme": "Gruvbox Plus Dark",
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
@@ -78,7 +79,7 @@
     "tooltip-format-disconnected": "MPD (disconnected)"
   },
   "idle_inhibitor": {
-    "format": "󰈈"
+    "format": "󰖨"
   },
   "tray": {
     "spacing": 10
@@ -88,15 +89,15 @@
     "format-alt": "{: %d/%m/%Y}"
   },
   "cpu": {
-    "format": "  {usage}%",
+    "format": "cpu {usage}%",
     "tooltip": false
   },
   "memory": {
-    "format": " {}%"
+    "format": "mem {}%"
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "{icon} {temperatureC}°C",
+    "format": "temp {temperatureC}°C",
     "format-icons": [
       "󱩅",
       "󱩅",
@@ -107,13 +108,13 @@
     "device": "acpi_video1",
     "format": "{icon}{percent}%",
     "format-icons": [
-		  "󰪞 ",
-			"󰪟 ",
-			"󰪠 ",
-			"󰪡 ",
-		  "󰪢 ",
-			"󰪣 ",
-			"󰪥 ",
+      "󰪞 ",
+      "󰪟 ",
+      "󰪠 ",
+      "󰪡 ",
+      "󰪢 ",
+      "󰪣 ",
+      "󰪥 "
     ]
   },
   "battery": {
@@ -136,12 +137,12 @@
     "bat": "BAT2"
   },
   "network": {
-    "format-wifi": "󰖩  {essid} ({signalStrength}%)",
+    "format-wifi": "󰖩 ",
     "format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "󰖪  Disconnected",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    "format-disconnected": "󰖪 ",
+    "format-alt": "󰖩  {essid} ({signalStrength}%)"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -166,14 +167,15 @@
   },
   "disk": {
     "interval": 30,
-    "format": " {percentage_used}%",
+    "format": "disk {percentage_used}%",
     "path": "/home"
   },
   "bluetooth": {
     "controller": "bluetoothctl",
-    "format": " {status}",
-    "format-connected": " {device_alias}",
-    "format-connected-battery": " {device_alias} {device_battery_percentage}% ",
+    "format": " ",
+    "format-connected": " ",
+    "format-alt": " {device_alias}",
+    "format-connected-battery": " ",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -192,7 +194,6 @@
   },
   "custom/os": {
     "format": "  archbish",
-    "format-alt": " "
   },
   "custom/wakatime": {
     "exec": "source $HOME/dotfiles/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime_waybar.py",
@@ -203,14 +204,34 @@
   "custom/timewarrior": {
     "exec": "python3 $HOME/.config/waybar/resources/custom_modules/time_warrior_waybar.py",
     "format": "{}",
-		"on-click": "timew stop && notify-send 'Time Warrior' 'Timer stopped'",
-		"on-click-right": "timew continue && notify-send 'Time Warrior' 'Timer resumed'",
+    "on-click": "sleep 0.15 && timew stop && notify-send 'Time Warrior' 'Timer stopped'",
+    "on-click-right": "sleep 0.1 && timew continue && notify-send 'Time Warrior' 'Timer resumed'",
     "return-type": "json",
     "interval": 5
   },
   "custom/logout": {
-    "format": "󰠜",
-    "on-click": "wlogout",
+    "format": "󰛂",
+    "on-click": "sleep 0.1 && wlogout",
     "tooltip": false
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='#b8bb26'>󰂝</span>",
+      "none": "󰂚",
+      "dnd-notification": "<span foreground='#b8bb26'>󰂛</span>",
+      "dnd-none": "󰂛",
+      "inhibited-notification": "<span foreground='#b8bb26'>󰂛</span>",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "<span foreground='#b8bb26'>󰂛</span>",
+      "dnd-inhibited-none": "󰂚"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   }
 }

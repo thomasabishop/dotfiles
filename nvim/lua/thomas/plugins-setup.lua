@@ -42,7 +42,7 @@ return packer.startup(function(use)
 		requires = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" },
 	})
 	use({ "epwalsh/obsidian.nvim", requires = { "nvim-lua/plenary.nvim" } })
-	-- use("ellisonleao/gruvbox.nvim")
+	use("ellisonleao/gruvbox.nvim")
 	use("sainnhe/gruvbox-material")
 	use("kdheepak/lazygit.nvim")
 	use("zk-org/zk-nvim")
