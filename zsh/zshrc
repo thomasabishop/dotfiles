@@ -21,6 +21,7 @@ plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
+export EDITOR='nvim'
 source ~/dotfiles/.env
 source $ZSH/oh-my-zsh.sh
 
