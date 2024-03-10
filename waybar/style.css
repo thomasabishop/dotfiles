@@ -34,7 +34,7 @@ button {
 #workspaces button.active {
   color: #282828;
   background-color: #98971a;
-  border: 2px solid #504945;
+  border: 2px solid #b8bb26;
 }
 
 #workspaces button {
@@ -261,7 +261,7 @@ button {
 #custom-timewarrior.active {
   background-color: #98971a;
   color: #282828;
-  border: 2px solid #504945;
+  border: 2px solid #b8bb26;
 }
 
 #custom-timewarrior.inactive {
@@ -274,4 +274,8 @@ button {
   color: #ebdbb2;
   background-color: #3c3836;
   border: 2px solid #504945;
+}
+
+#custom_notification.active {
+  border: 2px solid #b8bb26;
 }
