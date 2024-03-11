@@ -72,18 +72,18 @@
        y="269.20929" />
     <text
        xml:space="preserve"
-       style="font-size:70.9672px;font-family:'PragmataPro Mono';-inkscape-font-specification:'PragmataPro Mono, Normal';fill:#ebddd2;fill-opacity:0.988235;stroke:none;stroke-width:8.102;stroke-opacity:1"
+       style="font-size:70.9672px;font-family:'PragmataPro Mono';-inkscape-font-specification:'PragmataPro Mono, Normal';fill:#ebdbb2;fill-opacity:0.988235;stroke:none;stroke-width:8.102;stroke-opacity:1"
        x="49.150337"
        y="433.90469"
        id="text6"><tspan
          id="tspan6"
-         style="fill:#ebddd2;fill-opacity:0.988235;stroke:none;stroke-width:8.102;stroke-opacity:1"
+         style="fill:#ebdbb2;fill-opacity:0.988235;stroke:none;stroke-width:8.102;stroke-opacity:1"
          x="49.150337"
          y="433.90469"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:141.111px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ebddd2;fill-opacity:0.988235;stroke:none;stroke-width:8.102;stroke-opacity:1"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:141.111px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ebdbb2;fill-opacity:0.988235;stroke:none;stroke-width:8.102;stroke-opacity:1"
    id="tspan5">󰍀</tspan> </tspan></text>
     <path
-       style="font-size:150.506px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';fill:#ebddd2;fill-opacity:0.988235;stroke-width:8.64146"
+       style="font-size:150.506px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';fill:#ebdbb2;fill-opacity:0.988235;stroke-width:8.64146"
        d="M 105.35983,121.31347 V 58.401959 H 30.106834 v 62.911511 z m 0,-75.253003 q 5.26771,0 8.87986,3.612144 3.76265,3.612144 3.76265,8.729348 v 62.911511 q 0,4.81619 -3.76265,8.57884 -3.61215,3.76265 -8.87986,3.76265 H 30.106834 q -5.267709,0 -9.030359,-3.76265 -3.612144,-3.76265 -3.612144,-8.57884 V 58.401959 q 0,-5.117204 3.612144,-8.729348 3.76265,-3.612144 9.030359,-3.612144 H 86.546583 V 33.417963 q 0,-8.127324 -5.418216,-13.54554 -5.418216,-5.418215 -13.395033,-5.418215 -7.976818,0 -13.395034,5.418215 -5.418216,5.418216 -5.418216,13.54554 H 36.27758 q 0,-8.729348 4.214168,-15.80313 4.364674,-7.073781 11.438456,-11.4384553 7.224288,-4.3646739 15.80313,-4.3646739 8.578841,0 15.652623,4.3646739 7.224288,4.3646743 11.438456,11.4384553 4.364674,7.073782 4.364674,15.80313 V 46.060467 Z M 67.733334,102.34971 q -5.26771,0 -9.03036,-3.612144 -3.612144,-3.612144 -3.612144,-8.879854 0,-5.26771 3.612144,-9.03036 3.76265,-3.76265 9.03036,-3.76265 5.267709,0 8.879853,3.76265 3.76265,3.76265 3.76265,9.03036 0,5.26771 -3.76265,8.879854 -3.612144,3.612144 -8.879853,3.612144 z"
        id="text8"
        aria-label="󰍀 " />

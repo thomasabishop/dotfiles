@@ -2,7 +2,7 @@
   background-image: none;
   box-shadow: none;
   font-family: "Sys TT";
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -12,7 +12,7 @@ window {
 
 button {
   border-radius: 0;
-  color: #ebddd2;
+  color: #ebdbb2;
   background-color: #32302f;
   background-repeat: no-repeat;
   background-position: center;
