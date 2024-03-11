@@ -74,6 +74,7 @@ button {
 #cpu,
 #memory,
 #disk,
+#custom-diskBackup,
 #temperature,
 #backlight,
 #network,
@@ -184,7 +185,8 @@ button {
   /* color: #282828; */
 }
 
-#disk {
+#disk,
+#custom-diskBackup {
   color: #d79921;
   /* color: #282828; */
 }
