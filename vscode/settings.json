@@ -48,8 +48,6 @@
   //  "editor.fontWeight": 700,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
-  //   "editor.lineHeight": 1.3,
-  "editor.minimap.enabled": true,
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
   "editor.tokenColorCustomizations": {
@@ -221,6 +219,6 @@
   "totalTypeScript.hideBasicTips": true,
   "eslint.run": "onSave",
   "totalTypeScript.hiddenTips": ["passing-generics-to-types", "typeof"],
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "git.openRepositoryInParentFolders": "never"
 }
