@@ -18,15 +18,15 @@ button {
   background-position: center;
   background-size: 15%;
   margin: 10px;
-  border: 4px solid #504945;
+  border: 3px solid #504945;
 }
 
 button:focus,
 button:active,
 button:hover {
-  border-color: #b8bb26;
-  background-color: #98971a;
+  background-color: #504945;
   outline-style: none;
+  border: 3px solid #32302f;
 }
 
 #lock {

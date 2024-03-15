@@ -237,7 +237,7 @@
   },
 		"custom/diskBackup": {
 			"format": "bak {}",
-			"exec": "df -h /run/media/thomas/archbish_backups | awk 'NR==2{print $5}'",
+			"exec": "df -h /media/backups | awk 'NR==2{print $5}'",
 			"interval": 60,
 		
 }

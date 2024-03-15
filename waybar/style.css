@@ -6,7 +6,7 @@ window#waybar {
   /* background-color: #282828; */
 
   font-family: "PragmataPro Mono Liga";
-  border: 2px solid #504945;
+  /* border: 2px solid #504945; */
   background-color: rgba(40, 40, 40, 0.9);
 }
 
@@ -34,7 +34,7 @@ button {
 #workspaces button.active {
   color: #282828;
   background-color: #98971a;
-  border: 2px solid #b8bb26;
+  border: 2px solid #504945;
 }
 
 #workspaces button {
@@ -263,7 +263,7 @@ button {
 #custom-timewarrior.active {
   background-color: #98971a;
   color: #282828;
-  border: 2px solid #b8bb26;
+  border: 2px solid #504945;
 }
 
 #custom-timewarrior.inactive {
@@ -276,8 +276,4 @@ button {
   color: #ebdbb2;
   background-color: #3c3836;
   border: 2px solid #504945;
-}
-
-#custom_notification.active {
-  border: 2px solid #b8bb26;
 }
