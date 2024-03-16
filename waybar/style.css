@@ -14,9 +14,9 @@ tooltip {
   color: #ebdbb2;
   border-radius: 0;
   font-weight: 400;
-  background-color: #282828;
+  background-color: rgba(40, 40, 40, 0.8);
   box-shadow: none;
-  font-family: "Sys TT";
+  font-family: "PragmataPro Mono";
   padding: 20px;
 }
 
@@ -34,7 +34,7 @@ button {
 #workspaces button.active {
   color: #282828;
   background-color: #98971a;
-  border: 2px solid #504945;
+  border: 2px solid #79740e;
 }
 
 #workspaces button {
@@ -53,8 +53,8 @@ button {
 }
 
 #taskbar button {
-  color: #ebdbb2;
-  background-color: #3c3836;
+  /* color: #ebdbb2; */
+  /* background-color: #3c3836; */
   padding: 3px 8px;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -129,7 +129,8 @@ button {
 }
 
 #clock {
-  color: #98971a;
+  border: 1px solid #458588;
+  color: #458588;
   font-weight: 400;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -140,33 +141,37 @@ button {
   margin-top: 6px;
   margin-bottom: 6px;
 
-  border-right: 1px solid #504945;
+  /* border-right: 1px solid #504945; */
   /* color: #1d2021; */
 }
 
 #bluetooth {
   padding-right: 16px;
-  border-right: 1px solid #504945;
-  color: #458588;
+  /* border-right: 1px solid #504945; */
+  color: #98971a;
+
+  border: 1px solid #98971a;
   /* color: #282828; */
 }
 
 #battery {
-  color: #b16286;
-  border-right: 1px solid #504945;
+  border: 1px solid #458588;
+  color: #458588;
+  /* border-right: 1px solid #504945; */
   padding-right: 14px;
   /* color: #282828; */
 }
 
 #battery.charging,
 #battery.plugged {
-  color: #b16286;
+  border: 1px solid #458588;
+  color: #458588;
   /* color: #282828; */
 }
 
 #battery.critical:not(.charging) {
-  background-color: #fb4934;
-  color: #f2e5bc;
+  border: 1px solid #fb4934;
+  color: #fb4934;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -175,30 +180,34 @@ button {
 }
 
 #cpu {
-  color: #d79921;
+  border: 1px solid #458588;
+  color: #458588;
   /* color: #282828; */
   /* color: #282828; */
 }
 
 #memory {
-  color: #d79921;
+  border: 1px solid #458588;
+  color: #458588;
   /* color: #282828; */
 }
 
 #disk,
 #custom-diskBackup {
-  color: #d79921;
+  border: 1px solid #458588;
+  color: #458588;
   /* color: #282828; */
 }
 
 #backlight {
-  color: #b16286;
+  border: 1px solid #458588;
+  color: #458588;
   /* color: #282828; */
 }
 
 #network {
-  padding-right: 0;
-  color: #458588;
+  border: 1px solid #98971a;
+  color: #98971a;
   /* color: #282828; */
 }
 
@@ -221,8 +230,9 @@ button {
 }
 
 #temperature {
-  color: #d79921;
-  border-right: 1px solid #504945;
+  border: 1px solid #458588;
+  color: #458588;
+  /* border-right: 1px solid #504945; */
   padding-right: 14px;
 }
 
@@ -241,18 +251,21 @@ button {
 #idle_inhibitor.activated {
   background-color: #98971a;
   color: #282828;
+  border: 2px solid #79740e;
 }
 
 #custom-os {
   font-size: 16px;
   background-color: #458588;
   color: #f2e5bc;
-  border: 2px solid #504945;
+  border: 2px solid #076678;
 }
 
 #custom-wakatime {
-  color: #d65d0e;
-  border-right: 1px solid #504945;
+  color: #458588;
+
+  border: 1px solid #458588;
+  /* border-right: 1px solid #504945; */
   padding-right: 14px;
 }
 
@@ -263,7 +276,7 @@ button {
 #custom-timewarrior.active {
   background-color: #98971a;
   color: #282828;
-  border: 2px solid #504945;
+  border: 2px solid #79740e;
 }
 
 #custom-timewarrior.inactive {
