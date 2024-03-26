@@ -15,7 +15,7 @@ alias gpt="chatgpt-cli"
 
 # Set properties based on OS
 
-ZSH_THEME="risto"
+ZSH_THEME="thomas"
 plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 # Search against /home/thomas/repos/computer_science
