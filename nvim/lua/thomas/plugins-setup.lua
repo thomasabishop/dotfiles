@@ -37,10 +37,10 @@ return packer.startup(function(use)
 	-- 		require("pandoc").setup()
 	-- 	end,
 	-- })
-	use({
-		"folke/noice.nvim",
-		requires = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" },
-	})
+	-- use({
+	-- 	"folke/noice.nvim",
+	-- 	requires = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" },
+	-- })
 	use({ "epwalsh/obsidian.nvim", requires = { "nvim-lua/plenary.nvim" } })
 	-- use("ellisonleao/gruvbox.nvim")
 	use("sainnhe/gruvbox-material")
