@@ -49,10 +49,15 @@ tooltip label {
 #custom-diskBackup,
 #battery {
   padding: 0px 8px;
-  margin: 5px 0px 6px;
+  margin: 5px 3px 6px;
 }
 
-#taskbar button,
+#taskbar button {
+  margin: 5px 0 6px;
+  font-size: 18px;
+  padding: 0px 4px;
+}
+
 #workspaces button,
 #custom-timewarrior,
 #custom-notification,
