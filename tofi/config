@@ -172,7 +172,8 @@ z
 	height = 20%
 
 	# Window background color
-	background-color = #282828DB
+	background-color = #282828EF
+  
 
 	# Width of the border outlines in pixels.
 	outline-width = 0
@@ -214,7 +215,7 @@ z
 	#
 	# Supported values: top-left, top, top-right, right, bottom-right,
 	# bottom, bottom-left, left, center.
-	anchor = top
+	anchor = top-left
 
 	# Set the size of the exclusive zone.
 	#
@@ -228,7 +229,7 @@ z
 
 	# Window offset from edge of screen. Only has an effect when anchored
 	# to the relevant edge. Can be pixels or a percentage.
-	margin-top = 60
+	margin-top = 38
 	margin-bottom = 0
 	margin-left = 0
 	margin-right = 0

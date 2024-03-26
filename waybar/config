@@ -1,36 +1,39 @@
 {
   "layer": "top",
-  "margin": "6 10 -3",
-  "height": 30,
-  "spacing": 4,
+  "margin": "0",
+	"height": 25,
+  "spacing": 0,
   "modules-left": [
     "custom/os",
     "hyprland/workspaces",
-  ],
-  "modules-center": [
     "wlr/taskbar"
 	],
+  "modules-center": [
+  ],
   "modules-right": [
     "network",
     "bluetooth",
     "cpu",
     "memory",
-    "disk",
-		"custom/diskBackup",
     "temperature",
     "backlight",
+    "disk",
+    "custom/diskBackup",
     "battery",
     "custom/wakatime",
     "clock",
     "custom/timewarrior",
-    "custom/notification",
-    "idle_inhibitor",
-    "custom/logout"
-  ],
-  "wlr/taskbar": {
+    "custom/lock",
+    "custom/restart",
+    "custom/shutdown",
+		"custom/notification",
+], 
+
+
+ "wlr/taskbar": {
     "format": "{icon}",
     "icon-size": 20,
-    "icon-theme": "Gruvbox Plus Dark",
+    "icon-theme": "Pop Extended",
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
@@ -87,19 +90,19 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{:%H:%M }",
-    "format-alt": "{:%d/%m/%Y}"
+    "format": "󱑎  {:%H:%M}",
+    "format-alt": "󱑎  {:%d/%m/%Y}"
   },
   "cpu": {
-    "format": "cpu {usage}%",
+    "format": "󰛕 {usage}%",
     "tooltip": false
   },
   "memory": {
-    "format": "mem {}%"
+    "format": "   {}%",
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "temp {temperatureC}°C",
+    "format": "{icon}  {temperatureC}°C",
     "format-icons": [
       "󱩅",
       "󱩅",
@@ -108,7 +111,7 @@
   },
   "backlight": {
     "device": "acpi_video1",
-    "format": "bl {percent}%",
+    "format": "{icon} {percent}%",
     "format-icons": [
       "󰪞 ",
       "󰪟 ",
@@ -124,9 +127,9 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "batt {capacity}%",
-    "format-charging": "batt (ch){capacity}%",
-    "format-plugged": "batt {capacity}%",
+    "format": "{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}%",
+    "format-plugged": "{icon} {capacity}%",
     "format-icons": [
       "󰁻",
       "󰁼",
@@ -139,7 +142,7 @@
     "bat": "BAT2"
   },
   "network": {
-    "format-wifi": "󰖩  {essid}",
+    "format-wifi": "󰖩   {essid}",
     "format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
@@ -169,15 +172,15 @@
   },
   "disk": {
     "interval": 30,
-    "format": "disk {percentage_used}%",
+    "format": "󰟸  {percentage_used}%",
     "path": "/home"
   },
   "bluetooth": {
     "controller": "bluetoothctl",
-    "format": " active",
-    "format-connected": " connected",
+    "format": "  active",
+    "format-connected": "  connected",
     "format-alt": " {device_alias}",
-    "format-connected-battery": " {device_battery_percentage}%",
+    "format-connected-battery": "  {device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -195,11 +198,11 @@
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
   },
   "custom/os": {
-    "format": "  archbish",
+    "format": ""
   },
   "custom/wakatime": {
     "exec": "source $HOME/dotfiles/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime_waybar.py",
-    "format": "code {}",
+    "format": "󰲌  {}",
     "return-type": "json",
     "interval": 600
   },
@@ -220,28 +223,39 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='#b8bb26'>󰂝</span>",
+      "notification": "<span color=\"#fabd2f\">󰂝</span>",
       "none": "󰂚",
-      "dnd-notification": "<span foreground='#b8bb26'>󰂛</span>",
+      "dnd-notification": "󰂛",
       "dnd-none": "󰂛",
-      "inhibited-notification": "<span foreground='#b8bb26'>󰂛</span>",
+      "inhibited-notification": "󰂛",
       "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "<span foreground='#b8bb26'>󰂛</span>",
-      "dnd-inhibited-none": "󰂚"
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰂚",
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
-    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click": "sleep 0.2 && swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
-		"custom/diskBackup": {
-			"format": "bak {}",
-			"exec": "df -h /media/backups | awk 'NR==2{print $5}'",
-			"interval": 60,
-		
-}
+  "custom/diskBackup": {
+    "format": "󰠘  {}",
+    "exec": "df -h /media/backups | awk 'NR==2{print $5}'",
+    "interval": 60
+  },
+		"custom/lock": {
+    "format": "󰍁",
+		"on-click": "hyprlock"
+  },
+		"custom/shutdown": {
+    "format": "󱠡",
+		"on-click": "systemctl poweroff"
+  },
+	"custom/restart": {
+    "format": "󰑓",
+		"on-click": "systemctl reboot" 
+	},
 
 
 }

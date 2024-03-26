@@ -7,13 +7,15 @@ alias tw="timew"
 alias z="cd /home/thomas/repos/eolas"
 alias zn="/home/thomas/repos/eolas/scripts/new_zk_note.sh"
 alias dot="cd /home/thomas/dotfiles"
+alias gpt="chatgpt-cli"
+
 # alias xhd="cd /run/media/thomas"
 # alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
 # alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
 
 # Set properties based on OS
 
-ZSH_THEME=""
+ZSH_THEME="risto"
 plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 # Search against /home/thomas/repos/computer_science
@@ -37,4 +39,7 @@ eval "$(pyenv init --path)"
 export PATH="$HOME/.local/bin:$PATH"
 
 export OPENAI_API_KEY=${OPENAI_API_KEY}
-eval "$(starship init zsh)"
+
+# eval "$(starship init zsh)"
+
+export PATH=$PATH:/home/thomas/.spicetify
