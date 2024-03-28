@@ -13,7 +13,7 @@
 	# characters not in the chosen font will fail to render.
 	#
 	# Otherwise, fonts are interpreted in Pango format.
-	font = "/usr/share/fonts/Sys1.1/Sys1.1.ttf"
+	font = ".local/share/fonts/Sys1.1.ttf"
 	# Point size of text.
 	font-size = 14
 z
@@ -229,7 +229,7 @@ z
 
 	# Window offset from edge of screen. Only has an effect when anchored
 	# to the relevant edge. Can be pixels or a percentage.
-	margin-top = 38
+	margin-top = 43
 	margin-bottom = 0
 	margin-left = 0
 	margin-right = 0

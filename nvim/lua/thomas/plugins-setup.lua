@@ -48,7 +48,7 @@ return packer.startup(function(use)
 	use("zk-org/zk-nvim")
 	use("ryanoasis/vim-devicons")
 	use("tpope/vim-fugitive")
-	use("rcarriga/nvim-notify")
+	-- use("rcarriga/nvim-notify")
 	use("tpope/vim-markdown")
 	use("f-person/git-blame.nvim")
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side

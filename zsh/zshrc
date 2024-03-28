@@ -15,6 +15,8 @@ alias gpt="chatgpt-cli"
 
 # Set properties based on OS
 
+# ZSH_THEME="thomas"
+
 ZSH_THEME="thomas"
 plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
@@ -24,22 +26,21 @@ plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 # User configuration
 
 export EDITOR='nvim'
-source ~/dotfiles/.env
+source ~/.env
 source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init --path)"
 
 
 export PATH="$HOME/.local/bin:$PATH"
 
-export OPENAI_API_KEY=${OPENAI_API_KEY}
+# export OPENAI_API_KEY=${OPENAI_API_KEY}
 
-# eval "$(starship init zsh)"
 
 export PATH=$PATH:/home/thomas/.spicetify

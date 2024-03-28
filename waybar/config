@@ -1,13 +1,14 @@
 {
   "layer": "top",
   "margin": "0",
-	"height": 25,
+  "height": 25,
   "spacing": 0,
-  "modules-left": [
+
+"modules-left": [
     "custom/os",
     "hyprland/workspaces",
     "wlr/taskbar"
-	],
+  ],
   "modules-center": [
   ],
   "modules-right": [
@@ -18,7 +19,7 @@
     "temperature",
     "backlight",
     "disk",
-    "custom/diskBackup",
+		"custom/diskBackup",
     "battery",
     "custom/wakatime",
     "clock",
@@ -26,14 +27,13 @@
     "custom/lock",
     "custom/restart",
     "custom/shutdown",
-		"custom/notification",
+    "custom/notification",
 ], 
-
 
  "wlr/taskbar": {
     "format": "{icon}",
     "icon-size": 20,
-    "icon-theme": "Pop Extended",
+    "icon-theme": "Pop",
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-middle": "close",
@@ -90,19 +90,19 @@
     "spacing": 10
   },
   "clock": {
-    "format": "󱑎  {:%H:%M}",
-    "format-alt": "󱑎  {:%d/%m/%Y}"
+    "format": "{:%H:%M}",
+    "format-alt": "{:%d/%m/%Y}"
   },
   "cpu": {
-    "format": "󰛕 {usage}%",
+    "format": "CPU: {usage}%",
     "tooltip": false
   },
   "memory": {
-    "format": "   {}%",
+    "format": "Mem: {}%",
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "{icon}  {temperatureC}°C",
+    "format": "Temp: {temperatureC}°C",
     "format-icons": [
       "󱩅",
       "󱩅",
@@ -111,7 +111,7 @@
   },
   "backlight": {
     "device": "acpi_video1",
-    "format": "{icon} {percent}%",
+    "format": "Dim: {percent}%",
     "format-icons": [
       "󰪞 ",
       "󰪟 ",
@@ -127,9 +127,9 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}%",
-    "format-charging": "{icon} {capacity}%",
-    "format-plugged": "{icon} {capacity}%",
+    "format": "Bat: {capacity}%",
+    "format-charging": "Bat: {capacity}%",
+    "format-plugged": "Bat: {capacity}%",
     "format-icons": [
       "󰁻",
       "󰁼",
@@ -142,12 +142,12 @@
     "bat": "BAT2"
   },
   "network": {
-    "format-wifi": "󰖩   {essid}",
+    "format-wifi": "Net: {essid}",
     "format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
-    "format-disconnected": "󰖪 ",
-    "format-alt": "󰖩  {essid} ({signalStrength}%)"
+    "format-disconnected": "Net: none",
+    "format-alt": "Sig: {essid} ({signalStrength}%)"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -172,15 +172,15 @@
   },
   "disk": {
     "interval": 30,
-    "format": "󰟸  {percentage_used}%",
+    "format": "Disk: {percentage_used}%",
     "path": "/home"
   },
   "bluetooth": {
     "controller": "bluetoothctl",
-    "format": "  active",
-    "format-connected": "  connected",
-    "format-alt": " {device_alias}",
-    "format-connected-battery": "  {device_battery_percentage}%",
+    "format": "BT: active",
+    "format-connected": "BT: connected",
+    "format-alt": "BT: {device_alias}",
+    "format-connected-battery": "BT: {device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
@@ -201,8 +201,8 @@
     "format": ""
   },
   "custom/wakatime": {
-    "exec": "source $HOME/dotfiles/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime_waybar.py",
-    "format": "󰲌  {}",
+    "exec": "source $HOME/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime.py",
+    "format": "Code: {}",
     "return-type": "json",
     "interval": 600
   },
@@ -240,7 +240,7 @@
     "escape": true
   },
   "custom/diskBackup": {
-    "format": "󰠘  {}",
+    "format": "Bak: {}",
     "exec": "df -h /media/backups | awk 'NR==2{print $5}'",
     "interval": 60
   },
@@ -255,7 +255,5 @@
 	"custom/restart": {
     "format": "󰑓",
 		"on-click": "systemctl reboot" 
-	},
-
-
+	}
 }
