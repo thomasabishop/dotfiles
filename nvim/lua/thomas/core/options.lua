@@ -10,8 +10,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.colorcolumn = "80"
 opt.textwidth = 80
--- opt.clipboard = "unnamedplus"
-opt.clipboard:append("unnamedplus")
+opt.clipboard = "unnamedplus"
 opt.cursorline = true
 opt.background = "dark"
 opt.mouse = ""
