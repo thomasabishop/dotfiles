@@ -6,7 +6,7 @@ export XDG_RUNTIME_DIR=/run/user/1000
 
 if mountpoint -q /media/backups; then
 		sudo /usr/bin/rsnapshot weekly
-		sudo chown -R thomas:thomas /media/backups
+		# sudo chown -R thomas:thomas /media/backups
 		# Check the exit status of the rsnapshot command
 		if [ $? -eq 0 ]; then                                                                                                                                                                                      
 				/usr/bin/notify-send 'rsync' 'Weekly backup completed successfully'                                                                                                                                   
