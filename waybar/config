@@ -22,7 +22,8 @@
 		"custom/diskBackup",
     "battery",
     "custom/wakatime",
-    "clock",
+		"pulseaudio",
+		"clock",
     "custom/timewarrior",
     "custom/lock",
     "custom/restart",
@@ -150,12 +151,12 @@
     "format-alt": "Sig: {essid} ({signalStrength}%)"
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-bluetooth": "{icon} {volume}% {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
-    "format-source": " {volume}%",
-    "format-source-muted": "",
+    "format": "Vol: {volume}%",
+    "format-bluetooth": "Vol: {volume}%",
+    "format-bluetooth-muted": "",
+    "format-muted": "Vol: mute",
+    "format-source": "Vol: {volume}%",
+    "format-source-muted": "Vole: mute",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -198,7 +199,8 @@
     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
   },
   "custom/os": {
-    "format": ""
+    "format": "",
+		"tooltip": false
   },
   "custom/wakatime": {
     "exec": "source $HOME/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime.py",
@@ -212,7 +214,8 @@
     "on-click": "sleep 0.15 && timew stop && notify-send 'Time Warrior' 'Timer stopped'",
     "on-click-right": "sleep 0.1 && timew continue && notify-send 'Time Warrior' 'Timer resumed'",
     "return-type": "json",
-    "interval": 5
+    "interval": 5,
+		"tooltip": false
   },
   "custom/logout": {
     "format": "󰛂",
@@ -223,7 +226,7 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span color=\"#fabd2f\">󰂝</span>",
+      "notification": "<span color=\"#b8bb26\">󰂝</span>",
       "none": "󰂚",
       "dnd-notification": "󰂛",
       "dnd-none": "󰂛",
@@ -242,18 +245,22 @@
   "custom/diskBackup": {
     "format": "Bak: {}",
     "exec": "df -h /media/backups | awk 'NR==2{print $5}'",
-    "interval": 60
+    "interval": 60,
+		 "tooltip": false
   },
 		"custom/lock": {
     "format": "󰍁",
-		"on-click": "hyprlock"
+		"on-click": "hyprlock",
+		"tooltip": false
   },
 		"custom/shutdown": {
     "format": "󱠡",
+		"tooltip": false,
 		"on-click": "systemctl poweroff"
   },
 	"custom/restart": {
     "format": "󰑓",
+		"tooltip": false,
 		"on-click": "systemctl reboot" 
 	}
 }

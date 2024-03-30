@@ -16,15 +16,16 @@ button {
 }
 
 tooltip {
-  color: #ebdbb2;
+  color: #282828;
+  border-width: 0;
   border-radius: 0;
   font-weight: 400;
-  background-color: rgba(40, 40, 40, 0.8);
+  background-color: #bdae93;
   box-shadow: none;
 }
 
 tooltip label {
-  color: #ebdbb2;
+  color: #282828;
 }
 
 /* Layout */
@@ -46,6 +47,7 @@ tooltip label {
 #memory,
 #temperature,
 #backlight,
+#pulseaudio,
 #disk,
 #custom-diskBackup,
 #battery {
@@ -144,7 +146,8 @@ tooltip label {
 }
 
 #network,
-#bluetooth {
+#bluetooth,
+#pulseaudio {
   color: #282828;
   background-color: #a89984;
   border: 2px solid; /* Base border */
