@@ -49,6 +49,7 @@
 
 .notification-row .notification-background .notification {
   /* The actual notification */
+  margin: 0;
   border-radius: 0;
   color: #282828;
   background-color: #a89983;
@@ -353,7 +354,6 @@
 
 .notification-group .notification-group-headers {
   /* Notification Group Headers */
-
   font-weight: bold;
 }
 
