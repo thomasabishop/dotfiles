@@ -34,11 +34,6 @@ tooltip label {
   margin-right: 10px;
 }
 
-#custom-os {
-  padding: 0px 8px;
-  margin: 5px 3px 6px;
-}
-
 #clock,
 #custom-wakatime,
 #network,
@@ -92,10 +87,6 @@ tooltip label {
 
 #workspaces > *:last-child {
   margin-right: 10px;
-}
-
-#custom-os {
-  margin-left: 5px;
 }
 
 #custom-notification {
@@ -196,9 +187,10 @@ tooltip label {
 /* Specific module styles */
 
 #custom-os {
-  margin-right: 10px;
+  margin: 5px 15px 5px 5px;
   font-size: 18px;
-  padding-right: 14px;
+  padding: 0 12px 0 5px;
+  /* padding-right: 14px; */
   color: #282828;
   background-color: #a89984;
   border: 2px solid; /* Base border */
