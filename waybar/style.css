@@ -1,219 +1,117 @@
 * {
-  font-weight: 400;
+  min-height: 0;
 }
 
 window#waybar {
   font-family: "Sys TT", "Font Awesome";
-  background-color: #458588;
-  border-bottom: 2px solid #282828;
-  font-size: 16px;
+  background-color: #bdae93;
+  padding: 2px 0;
+  border-left: 2px solid #ebdbb2;
+  border-top: 2px solid #ebdbb2;
+  border-right: 2px solid #665c54;
+  border-bottom: 2px solid #665c54;
 }
 
-button {
-  border-radius: 0;
+#workspaces button {
+  font-size: 14px;
+}
+
+#workspaces button.active {
+  font-style: italic;
+}
+
+#workspaces button:hover {
+  background-color: transparent;
   border: none;
-  opacity: 1;
+}
+
+#timeTracker,
+#workspaceList,
+#clockOutput,
+#metrics {
+  background-color: #bdae93;
+  border-left: 2px solid #665c54;
+  border-top: 2px solid #665c54;
+  border-right: 2px solid #ebdbb2;
+  border-bottom: 2px solid #ebdbb2;
+  margin: 5px 3px;
+  padding: 0 10px;
+}
+
+#controls,
+#workspaces > *:last-child {
+  margin-right: 3px;
+}
+
+#image.timewarrior,
+#image.notification,
+#image.os,
+#image.keys,
+#image.shutdown,
+#image.restart,
+#taskbar button {
+  background-color: #bdae93;
+  color: #282828;
+  border-top: 2px solid #ebdbb2;
+  border-left: 2px solid #ebdbb2;
+  border-bottom: 2px solid #665c54;
+  border-right: 2px solid #665c54;
+  margin: 5px 3px;
+  margin-right: 0;
+  padding: 3px;
+}
+
+#image.code,
+#image.battery,
+#image.backup,
+#image.harddrive,
+#image.volume,
+#image.backlight,
+#image.cpu,
+#image.memory,
+#image.internet,
+#image.bluetooth {
+  margin-right: 5px;
+}
+
+#image.code,
+#image.battery,
+#image.backup,
+#image.harddrive,
+#image.volume,
+#image.backlight,
+#image.cpu,
+#image.memory {
+  margin-left: 10px;
+}
+
+#image.backlight,
+#image.volume {
+  padding-bottom: 2px;
+}
+
+#image.harddrive,
+#image.backup {
+  padding-bottom: 5px;
+}
+
+#network {
+  margin-right: 10px;
 }
 
 tooltip {
   color: #282828;
-  border-width: 0;
   border-radius: 0;
   font-weight: 400;
   background-color: #bdae93;
-  box-shadow: none;
+  border-left: 1px solid #ebdbb2;
+  border-top: 1px solid #ebdbb2;
+  border-right: 1px solid #665c54;
+  border-bottom: 1px solid #665c54;
+  padding: 4px 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 tooltip label {
   color: #282828;
-}
-
-/* Layout */
-
-#taskbar {
-  margin-right: 10px;
-}
-
-#clock,
-#custom-wakatime,
-#network,
-#bluetooth,
-#cpu,
-#memory,
-#temperature,
-#backlight,
-#pulseaudio,
-#disk,
-#custom-diskBackup,
-#battery {
-  padding: 2px 8px 0;
-  margin: 5px 3px 6px;
-}
-
-#taskbar button {
-  margin: 5px 0 6px;
-  font-size: 18px;
-  padding: 0px 4px;
-}
-
-#custom-timewarrior,
-#custom-notification,
-#custom-lock,
-#custom-shutdown,
-#custom-restart,
-#idle_inhibitor,
-#custom-logout {
-  margin: 5px 0 6px;
-  font-size: 18px;
-  padding: 0px 8px;
-  /* margin: 8px 0 10px; */
-}
-
-#taskbar button {
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-}
-
-#workspaces button {
-  margin: 5px 0 6px;
-  font-size: 18px;
-  color: #ebdbb2;
-  padding: 3px 5px 0;
-  background-color: #665c54;
-  border: 2px solid; /* Base border */
-  border-color: #928374 #282828 #282828 #928374;
-}
-
-#workspaces > *:last-child {
-  margin-right: 10px;
-}
-
-#custom-notification {
-  margin-right: 5px;
-}
-
-/* Colours */
-
-#taskbar button.active {
-  background-color: #ebdbb2;
-  border: 2px solid; /* Base border */
-  border-color: #fbf1c7 #a89984 #a89984 #fbf1c7;
-}
-
-#battery,
-#battery.charging,
-#battery.plugged {
-  color: #282828;
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-}
-
-#clock {
-  color: #282828;
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-}
-#cpu,
-#memory,
-#temperature,
-#backlight {
-  color: #282828;
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-
-  color: #282828;
-}
-
-#disk,
-#custom-diskBackup {
-  color: #282828;
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-}
-
-#network,
-#bluetooth,
-#pulseaudio {
-  color: #282828;
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-
-  /* background-color: #c0c0c0; */
-  /*   border: 2px solid; /1* Base border *1/ */
-  /*   border-color: #ffffff #808080 #808080 #ffffff; */
-  /*   color: #282828; */
-}
-
-#workspaces button.urgent,
-#temperature.critical,
-#network.disconnected,
-#battery.critical:not(.charging) {
-  color: #ebdbb2;
-  background-color: #cc241d;
-  border-color: #fb4924 #9d0006 #9d0006 #fb4924;
-}
-
-#custom-wakatime {
-  color: #282828;
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-}
-
-#workspaces button.active {
-  color: #282828;
-  background-color: #ebdbb2;
-  border: 2px solid; /* Base border */
-  border-color: #fbf1c7 #a89984 #a89984 #fbf1c7;
-}
-
-#custom-timewarrior.active {
-  color: #282828;
-  background-color: #98971a;
-  border: 2px solid; /* Base border */
-  border-color: #b8bb27 #79740e #79740e #b8bb27;
-}
-
-#custom-timewarrior {
-  margin-left: 10px;
-}
-
-/* Specific module styles */
-
-#custom-os {
-  margin: 5px 15px 5px 5px;
-  font-size: 18px;
-  padding: 0 12px 0 5px;
-  /* padding-right: 14px; */
-  color: #282828;
-  background-color: #a89984;
-  border: 2px solid; /* Base border */
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-}
-
-#custom-notification {
-  margin-left: 10px;
-}
-
-#custom-timewarrior {
-  margin-right: 10px;
-}
-
-#custom-timewarrior,
-#custom-notification,
-#custom-lock,
-#custom-shutdown,
-#custom-restart,
-#idle_inhibitor,
-#custom-logout {
-  background-color: #665c54;
-  border: 2px solid; /* Base border */
-  border-color: #928374 #282828 #282828 #928374;
-  color: #ebdbb2;
 }

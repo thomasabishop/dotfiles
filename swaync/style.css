@@ -52,10 +52,15 @@
   margin: 0;
   border-radius: 0;
   color: #282828;
-  background-color: #a89983;
-  border: 2px solid;
-  border-color: #ebdbb2 #665c54 #665c54 #ebdbb2;
-  padding: 0;
+  background-color: #bdae93;
+  border: 2px solid #ebdbb2;
+
+  /* border-left: 2px solid #ebdbb2; */
+  /* border-top: 2px solid #ebdbb2; */
+  /* border-right: 2px solid #665c54; */
+  /* border-bottom: 2px solid #665c54; */
+
+  padding: 2px 0;
   transition: background 0.15s ease-in-out;
 }
 
@@ -402,6 +407,12 @@
 
 .control-center {
   /* The Control Center which contains the old notifications + widgets */
+
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-left: 2px solid #ebdbb2;
+  border-top: 2px solid #ebdbb2;
+  border-right: 2px solid #665c54;
+  border-bottom: 2px solid #665c54;
   background: #bdae93;
   border-radius: 0px;
 }
@@ -409,11 +420,6 @@
 .control-center .control-center-list-placeholder {
   /* The placeholder when there are no notifications */
   opacity: 0.5;
-}
-
-.control-center .control-center-list {
-  /* List of notifications */
-  background: transparent;
 }
 
 .control-center .control-center-list .notification {

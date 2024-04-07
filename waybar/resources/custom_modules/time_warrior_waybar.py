@@ -36,10 +36,10 @@ def main():
     output = {}
     try:
         if timer_active():
-            output["text"] = "󱫐"
+            output["text"] = "Timer running"
             output["class"] = "active"
         else:
-            output["text"] = "󱫦"
+            output["text"] = "No timer"
             output["class"] = "inactive"
     except Exception as e:
         output["text"] = "Error"

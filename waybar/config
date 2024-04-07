@@ -1,106 +1,228 @@
 {
+ 
   "layer": "top",
+  "position": "bottom",
   "margin": "0",
-  "height": 25,
-  "spacing": 0,
-
-"modules-left": [
-    "custom/os",
-    "hyprland/workspaces",
-    "wlr/taskbar"
+  "height": 20,
+  "spacing": "",
+ 
+  "modules-left": [
+		"image#os",
+		 "wlr/taskbar"
   ],
+
   "modules-center": [
   ],
+  
   "modules-right": [
-    "network",
-    "bluetooth",
-    "cpu",
-    "memory",
-    "temperature",
-    "backlight",
-    "disk",
-		"custom/diskBackup",
-    "battery",
-    "custom/wakatime",
-		"pulseaudio",
-		"clock",
-    "custom/timewarrior",
-    "custom/lock",
-    "custom/restart",
-    "custom/shutdown",
-    "custom/notification",
-], 
+		"group/timeTracker",
+		"group/workspaceList",
+		"group/metrics",
+		"group/clockOutput",
+		"group/controls",
+  ],
+	
+  "group/clockOutput": {
+		"orientation": "horizontal",
+		"modules": [
+				"clock",
+		]
+  },
 
- "wlr/taskbar": {
+  "group/workspaceList": {
+		"orientation": "horizontal",
+		"modules": [
+		  "hyprland/workspaces",	
+		]
+	 },
+  
+  "group/timeTracker": {
+		"orientation": "horizontal",
+		"modules": [
+		  "custom/timewarrior",	
+		]
+	},
+
+  "group/metrics": {
+		"orientation": "horizontal",
+		"modules": [
+		    "image#internet",
+				"network",
+		    "image#bluetooth",
+				"bluetooth",
+		    "image#memory",
+				"memory",
+				"image#cpu",
+				"cpu",
+			  "image#harddrive",
+				"disk",
+				"image#backup",
+				"custom/diskBackup",
+			  "image#backlight",
+				"backlight",
+				"image#volume",
+				"pulseaudio",
+				"image#battery",
+				"battery",
+				"image#code",
+				"custom/wakatime",
+		]
+	},
+
+  "group/controls": {
+		"orientation": "horizontal",
+		"modules": [
+			  "image#timewarrior",	
+				"image#notification",
+				"image#keys",
+				"image#restart",
+				"image#shutdown",
+		]
+  },
+
+  "hyprland/workspaces": {
+   "format": "{icon}",
+   "on-click": "activate",
+   "sort-by-number": false,
+   "format-icons": {
+    "1": "Workspace 1",
+    "2": "Workspace 2",
+    "3": "Workspace 3",
+    "4": "Workspace 4",
+    "5": "Workspace 5",
+   }, 
+  }, 
+
+ "image#code": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/binary-98.png",
+		"size": 22,
+		"interval": 5,
+		},
+
+ "image#battery": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/battery-98.png",
+		"size": 22,
+		"interval": 5,
+		},
+
+ "image#backup": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/floppy-98.png",
+		"size": 22,
+		"interval": 5,
+		},
+
+ "image#harddrive": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/hardisk-98.png",
+		"size": 22,
+		"interval": 5,
+		},
+
+ "image#volume": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/sound-98.png",
+		"size": 19,
+		"interval": 5,
+		},
+
+ "image#backlight": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/brightness-98.png",
+		"size": 18,
+		"interval": 5,
+		},
+
+ "image#memory": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/memory-98.png",
+		"size": 22,
+		"interval": 5,
+		},
+
+ "image#cpu": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/processor-98.png",
+		"size": 22,
+		"interval": 5,
+		},
+
+ "image#internet": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/internet-98.png",
+		"size": 22,
+		"interval": 5,
+		},
+
+  "image#bluetooth": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/bluetooth.png",
+		"size": 20,
+		"interval": 5,
+		},
+
+
+  "image#os": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/computer-98.png",
+		"size": 26,
+		"interval": 5,
+		},
+
+  "image#keys": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/keys-98.png",
+		"size": 26,
+		"interval": 5,
+    "on-click": "sleep 0.1 && hyprlock",
+		},
+
+  "image#restart": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/restart-98.png",
+		"size": 26,
+		"interval": 5,
+    "on-click": "sleep 0.1 && systemctl reboot",
+		},
+
+  "image#shutdown": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/poweroff-98.png",
+		"size": 26,
+		"interval": 5,
+    "on-click": "sleep 0.1 && systemctl poweroff",
+		},
+
+  "image#notification": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/notification-98.png",
+		"size": 26,
+		"interval": 5,
+    "on-click": "sleep 0.2 && swaync-client -t -sw",
+		},
+
+  "image#timewarrior": {
+		"path": "/home/thomas/dotfiles/gruvbox-95/icons/timewarrior-98.png",
+		"size": 26,
+		"interval": 5,
+		"on-click": "sleep 0.15 && timew stop && notify-send 'Time Warrior' 'Timer stopped'",
+    "on-click-right": "sleep 0.1 && timew continue && notify-send 'Time Warrior' 'Timer resumed'",
+		},
+
+  "wlr/taskbar": {
     "format": "{icon}",
-    "icon-size": 20,
-    "icon-theme": "Pop",
+    "icon-size": 22,
+    "icon-theme": "Raleigh",
     "tooltip-format": "{title}",
     "on-click": "activate",
-    "on-click-middle": "close",
-    "ignore-list": [
-      "Alacritty"
-    ],
-    "app_ids-mapping": {
-      "firefoxdeveloperedition": "firefox-developer-edition"
-    },
-    "rewrite": {
-      "Firefox Web Browser": "Firefox",
-      "Foot Server": "Terminal"
-    }
   },
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "",
-      "unlocked": ""
-    }
-  },
-  "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "unknown-tag": "N/A",
-    "interval": 2,
-    "consume-icons": {
-      "on": " "
-    },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
-      "on": " "
-    },
-    "repeat-icons": {
-      "on": " "
-    },
-    "single-icons": {
-      "on": "1 "
-    },
-    "state-icons": {
-      "paused": "",
-      "playing": ""
-    },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)"
-  },
-  "idle_inhibitor": {
-    "format": "󰖨"
-  },
+
   "tray": {
     "spacing": 10
   },
+
   "clock": {
     "format": "{:%H:%M}",
     "format-alt": "{:%d/%m/%Y}"
   },
+  
   "cpu": {
-    "format": "CPU: {usage}%",
-    "tooltip": false
+    "format": "{usage}%",
+    "tooltip": "CPU"
   },
+ 
   "memory": {
-    "format": "Mem: {}%",
+    "format": "{}%",
+    "tooltip": "Memory"
   },
+  
   "temperature": {
     "critical-threshold": 80,
     "format": "Temp: {temperatureC}°C",
@@ -110,157 +232,86 @@
       "󱩅"
     ]
   },
+ 
   "backlight": {
     "device": "acpi_video1",
-    "format": "Dim: {percent}%",
-    "format-icons": [
-      "󰪞 ",
-      "󰪟 ",
-      "󰪠 ",
-      "󰪡 ",
-      "󰪢 ",
-      "󰪣 ",
-      "󰪥 "
-    ]
+    "format": "{percent}%",
   },
+  
   "battery": {
     "states": {
       "warning": 30,
       "critical": 15
     },
-    "format": "Bat: {capacity}%",
-    "format-charging": "Bat: {capacity}%",
-    "format-plugged": "Bat: {capacity}%",
-    "format-icons": [
-      "󰁻",
-      "󰁼",
-      "󰁿",
-      "󰂀",
-      "󰁹"
-    ]
+    "format": "{capacity}%",
+    "format-charging": "{capacity}%",
+    "format-plugged": "{capacity}%",
   },
-  "battery#bat2": {
-    "bat": "BAT2"
-  },
+
   "network": {
-    "format-wifi": "Net: {essid}",
+    "format-wifi": "{essid}",
     "format-ethernet": "{ipaddr}/{cidr}",
     "tooltip-format": "{ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP)",
     "format-disconnected": "Net: none",
-    "format-alt": "Sig: {essid} ({signalStrength}%)"
+    "format-alt": "{essid} ({signalStrength}%)"
   },
+ 
   "pulseaudio": {
-    "format": "Vol: {volume}%",
-    "format-bluetooth": "Vol: {volume}%",
+    "format": "{volume}%",
+    "format-bluetooth": "{volume}%",
     "format-bluetooth-muted": "",
-    "format-muted": "Vol: mute",
-    "format-source": "Vol: {volume}%",
-    "format-source-muted": "Vole: mute",
-    "format-icons": {
-      "headphone": "",
-      "hands-free": "",
-      "phone": "",
-      "portable": "",
-      "car": "",
-      "default": [
-        "",
-        "",
-        ""
-      ]
-    },
+    "format-muted": "Mute",
+    "format-source": "{volume}%",
+    "format-source-muted": "Mute",
     "on-click": "pavucontrol"
   },
+  
   "disk": {
     "interval": 30,
-    "format": "Disk: {percentage_used}%",
+    "format": "{percentage_used}%",
     "path": "/home"
   },
+
   "bluetooth": {
     "controller": "bluetoothctl",
-    "format": "BT: active",
-    "format-connected": "BT: connected",
-    "format-alt": "BT: {device_alias}",
-    "format-connected-battery": "BT: {device_battery_percentage}%",
+    "format": "Active",
+    "format-connected": "Connected",
+    "format-alt": "{device_alias}",
+    "format-connected-battery": "{device_battery_percentage}%",
     "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
-  },
-  "custom/media": {
-    "format": "{icon} {}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": "🎜"
-    },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
-  },
-  "custom/os": {
-    "format": "",
-		"tooltip": false
-  },
+   },
+  
   "custom/wakatime": {
     "exec": "source $HOME/.env && python3 $HOME/.config/waybar/resources/custom_modules/wakatime.py",
-    "format": "Code: {}",
+    "format": "{}",
     "return-type": "json",
     "interval": 600
   },
+ 
   "custom/timewarrior": {
     "exec": "python3 $HOME/.config/waybar/resources/custom_modules/time_warrior_waybar.py",
     "format": "{}",
-    "on-click": "sleep 0.15 && timew stop && notify-send 'Time Warrior' 'Timer stopped'",
-    "on-click-right": "sleep 0.1 && timew continue && notify-send 'Time Warrior' 'Timer resumed'",
     "return-type": "json",
     "interval": 5,
 		"tooltip": false
   },
-  "custom/logout": {
-    "format": "󰛂",
-    "on-click": "sleep 0.1 && wlogout",
-    "tooltip": false
-  },
-  "custom/notification": {
-    "tooltip": false,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "<span color=\"#b8bb26\">󰂝</span>",
-      "none": "󰂚",
-      "dnd-notification": "󰂛",
-      "dnd-none": "󰂛",
-      "inhibited-notification": "󰂛",
-      "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "󰂛",
-      "dnd-inhibited-none": "󰂚",
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click": "sleep 0.2 && swaync-client -t -sw",
-    "on-click-right": "swaync-client -d -sw",
-    "escape": true
-  },
+ 
   "custom/diskBackup": {
-    "format": "Bak: {}",
+    "format": "{}",
     "exec": "df -h /media/backups | awk 'NR==2{print $5}'",
     "interval": 60,
-		 "tooltip": false
-  },
-		"custom/lock": {
-    "format": "󰍁",
-		"on-click": "hyprlock",
 		"tooltip": false
   },
-		"custom/shutdown": {
+  
+  "custom/shutdown": {
     "format": "󱠡",
 		"tooltip": false,
 		"on-click": "systemctl poweroff"
   },
-	"custom/restart": {
-    "format": "󰑓",
-		"tooltip": false,
-		"on-click": "systemctl reboot" 
-	}
+
+
 }

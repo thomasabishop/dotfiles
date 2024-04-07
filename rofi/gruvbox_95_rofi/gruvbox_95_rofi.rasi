@@ -17,7 +17,7 @@
     selected-urgent-background:  var(red);
     alternate-active-background: var(lightbg);
     spacing:                     2;
-    blue:                        rgba ( 152, 151, 26 , 100 % );
+    blue:                        rgba (69, 133, 136, 80 % );
     alternate-normal-foreground: var(foreground);
     urgent-background:           var(background);
     selected-normal-foreground:  var(foreground);
@@ -26,7 +26,7 @@
     selected-active-background:  var(blue);
     active-background:           var(background);
     selected-normal-background:  var(lightfg);
-    alternate-normal-background: var(lightbg);
+    alternate-normal-background: var(background);
     foreground:                  rgba ( 40, 40, 40, 100 % );
     selected-urgent-foreground:  var(background);
     normal-foreground:           var(foreground);
@@ -34,9 +34,9 @@
     alternate-active-foreground: var(blue);
 }
 element {
-    padding: 2px ;
+		padding: 8px 2px 0px 2px;
     cursor:  pointer;
-    spacing: 5px ;
+    spacing: 8px ;
     border:  0;
 }
 element normal.normal {
@@ -52,8 +52,8 @@ element normal.active {
     text-color:       var(active-foreground);
 }
 element selected.normal {
-    background-color: var(selected-normal-background);
-    text-color:       var(selected-normal-foreground);
+		background-color: var(selected-normal-background);
+    text-color:        #ebdbb2;
 
 }
 element selected.urgent {
@@ -83,8 +83,9 @@ element-text {
     text-color:       inherit;
 }
 element-icon {
+		padding:				  0 0 6px 0;
     background-color: transparent;
-    size:             1.0000em ;
+    size:             1.00000em ;
     cursor:           inherit;
     text-color:       inherit;
 }
@@ -92,9 +93,12 @@ window {
     padding:          5;
     background-color: var(background);
     width:            20%;
+		border:					  2;
+		border-color:     #ebdbb2;
+		margin:					  1 10;
 }
 mainbox {
-    padding: 0;
+    padding: 4;
     border:  0;
 }
 message {
@@ -103,7 +107,7 @@ message {
     border:       2px dash 0px 0px ;
 }
 textbox {
-    text-color: var(foreground);
+    text-color:   #f9f5d7;
 }
 listview {
     padding:      2px 0px 0px ;
@@ -116,9 +120,9 @@ listview {
 scrollbar {
     width:        2px ;
     padding:      0;
-    handle-width: 7px ;
+    handle-width: 6px ;
     border:       0;
-    handle-color: rgba ( 102, 92, 84, 100% );
+    handle-color: #665c54;
 }
 sidebar {
     border-color: var(separatorcolor);
@@ -147,11 +151,11 @@ textbox-num-sep {
     text-color: var(grey);
 }
 inputbar {
-    background-color: rgba ( 251, 241, 199, 100% ) ;
-    padding:    2px ;
-    spacing:    2px ;
+    background-color: #f9f5d7;
+		padding: 8px 2px 6px 2px;
+    spacing:    5px ;
     text-color: var(normal-foreground);
-    border: 1;
+    border: 2px;
     border-color: rgba ( 102, 92, 84, 100% );
     children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
 }
