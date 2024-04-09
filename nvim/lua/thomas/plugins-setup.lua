@@ -124,6 +124,7 @@ return packer.startup(function(use)
 		end,
 		ft = { "markdown" },
 	})
+
 	-- GitHub Copilot
 
 	use({
