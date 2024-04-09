@@ -8,6 +8,8 @@ alias z="cd /home/thomas/repos/eolas"
 alias zn="/home/thomas/repos/eolas/scripts/new_zk_note.sh"
 alias dot="cd /home/thomas/dotfiles"
 alias gpt="chatgpt-cli"
+alias ss="/home/thomas/dotfiles/scripts/screenshot.sh"
+alias SS="/home/thomas/dotfiles/scripts/delayed_screenshot.sh"
 
 # alias xhd="cd /run/media/thomas"
 # alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
