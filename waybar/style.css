@@ -26,6 +26,7 @@ window#waybar {
 }
 
 #timeTracker,
+#custom-timewarrior.active,
 #workspaceList,
 #clockOutput,
 #metrics {
@@ -108,10 +109,16 @@ tooltip {
   border-top: 1px solid #ebdbb2;
   border-right: 1px solid #665c54;
   border-bottom: 1px solid #665c54;
-  padding: 4px 8px;
+  padding: 5px 10px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 tooltip label {
+  padding: 8px;
   color: #282828;
+}
+
+#custom-timewarrior.active {
+  color: #cc241d;
+  font-weight: bold;
 }

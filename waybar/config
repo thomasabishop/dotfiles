@@ -15,7 +15,7 @@
   ],
   
   "modules-right": [
-		"group/timeTracker",
+		"custom/timewarrior",
 		"group/workspaceList",
 		"group/metrics",
 		"group/clockOutput",

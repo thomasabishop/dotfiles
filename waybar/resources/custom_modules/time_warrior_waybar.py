@@ -39,7 +39,7 @@ def main():
             output["text"] = "Timer running"
             output["class"] = "active"
         else:
-            output["text"] = "No timer"
+            output["text"] = ""
             output["class"] = "inactive"
     except Exception as e:
         output["text"] = "Error"
