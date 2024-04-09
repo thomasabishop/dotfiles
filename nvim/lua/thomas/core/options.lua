@@ -25,5 +25,5 @@ opt.formatoptions = "cro"
 opt.backspace = "indent,eol,start"
 opt.conceallevel = 0
 -- vim.notify = require("notify")
--- vim.g.gruvbox_material_background = "hard"
+-- vim.g.gruvbox_material_background = "medium"
 vim.g.gruvbox_material_enable_bold = 1
