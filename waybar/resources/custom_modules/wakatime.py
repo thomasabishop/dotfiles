@@ -8,8 +8,21 @@ WAKATIME_API_KEY = os.getenv("WAKATIME_API_KEY")
 WAKATIME_ENDPOINT = "https://wakatime.com/api/v1/users/current/status_bar/today"
 
 
+class DataPending(Exception):
+    """Raised when the data is pending or not yet available"""
+
+    pass
+
+
 def get_data(url):
-    response = requests.get(url)
+    try:
+        response = requests.get(url, timeout=5)
+
+    except requests.exceptions.Timeout:
+        raise DataPending("Request timed out. Data may be pending.")
+    except requests.exceptions.RequestException as e:
+        raise Exception("Could not fetch data.")
+
     if response.status_code == 200:
         return response.json()
     else:
@@ -47,6 +60,8 @@ def main():
         output["text"] = digital_time
         output["tooltip"] = tooltip
 
+    except DataPending as e:
+        output["text"] = "Pending"
     except Exception as e:
         output["text"] = "Error"
 
