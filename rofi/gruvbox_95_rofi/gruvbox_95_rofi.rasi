@@ -95,7 +95,7 @@ window {
     width:            20%;
 		border:					  2;
 		border-color:     #ebdbb2;
-		margin:					  1 10;
+		margin:					  1 7;
 }
 mainbox {
     padding: 4;

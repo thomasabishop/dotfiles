@@ -1,5 +1,5 @@
 configuration {
-/*	modes: "window,drun,run,ssh";*/
+modes: "window,drun,run,combi";
 font: "Sys TT 12";
 location: 7;
 kb-row-up: "Up,Control+k";
