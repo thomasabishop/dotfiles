@@ -11,7 +11,7 @@ local function update_hl(group, tbl)
 	vim.api.nvim_set_hl(0, group, new_hl)
 end
 
--- update_hl("Function", { bold = true })
+update_hl("Function", { bold = false })
 update_hl("Comment", { italic = true })
 
 update_hl("markdownH1", { bold = true })
