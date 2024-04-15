@@ -73,7 +73,6 @@
 		"orientation": "horizontal",
 		"modules": [
 			  "image#timewarrior",	
-				"image#notification",
 				"image#keys",
 				"image#restart",
 				"image#shutdown",
@@ -90,7 +89,8 @@
     "3": "Workspace 3",
     "4": "Workspace 4",
     "5": "Workspace 5",
-   }, 
+    "6": "Workspace 6",
+}, 
   }, 
 
  "image#code": {
@@ -171,29 +171,29 @@
 		"path": "/home/thomas/dotfiles/gruvbox-95/icons/restart-98.png",
 		"size": 26,
 		"interval": 5,
-    "on-click": "sleep 0.1 && systemctl reboot",
+    "on-click": "/home/thomas/dotfiles/scripts/reboot_sound.sh",
 		},
 
   "image#shutdown": {
 		"path": "/home/thomas/dotfiles/gruvbox-95/icons/poweroff-98.png",
 		"size": 26,
 		"interval": 5,
-    "on-click": "sleep 0.1 && systemctl poweroff",
+    "on-click": "/home/thomas/dotfiles/scripts/shutdown_sound.sh",
 		},
 
   "image#notification": {
 		"path": "/home/thomas/dotfiles/gruvbox-95/icons/notification-98.png",
 		"size": 26,
 		"interval": 5,
-    "on-click": "sleep 0.2 && swaync-client -t -sw",
+    "on-click": "sleep 0.2 && slack",
 		},
 
   "image#timewarrior": {
 		"path": "/home/thomas/dotfiles/gruvbox-95/icons/timewarrior-98.png",
 		"size": 26,
-		"interval": 5,
-		"on-click": "sleep 0.15 && timew stop && notify-send 'Time Warrior' 'Timer stopped'",
-    "on-click-right": "sleep 0.1 && timew continue && notify-send 'Time Warrior' 'Timer resumed'",
+		"interval": 2,
+		"on-click": "sleep 0.1 && timew stop && /home/thomas/dotfiles/scripts/notify_slack_waybar_wrapper.sh 'time_tracking' 'Time Warrior: timer stopped.'",
+    "on-click-right": "sleep 0.1 && timew continue && /home/thomas/dotfiles/scripts/notify_slack_waybar_wrapper.sh 'time_tracking' 'Time Warrior: timer resumed.'",
 		},
 
   "wlr/taskbar": {

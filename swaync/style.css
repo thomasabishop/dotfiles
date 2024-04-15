@@ -53,14 +53,16 @@
   border-radius: 0;
   color: #282828;
   background-color: #bdae93;
-  border: 2px solid #ebdbb2;
-
+  border-left: 6px solid #504945;
+  border-bottom: 2px solid #504945;
+  border-top: 2px solid #504945;
+  border-right: 2px solid #504945;
   /* border-left: 2px solid #ebdbb2; */
   /* border-top: 2px solid #ebdbb2; */
   /* border-right: 2px solid #665c54; */
   /* border-bottom: 2px solid #665c54; */
 
-  padding: 2px 0;
+  padding: 6px;
   transition: background 0.15s ease-in-out;
 }
 
