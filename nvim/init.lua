@@ -9,6 +9,10 @@ vim.cmd([[
   autocmd BufRead,BufNewFile *.md set syntax=markdown
 ]])
 
+vim.cmd([[
+  highlight link markdownError Normal 
+]])
+
 require("thomas.plugins-setup")
 require("thomas.core.options")
 require("thomas.core.keymaps")
