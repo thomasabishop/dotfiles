@@ -80,7 +80,7 @@ def process_entries():
             }
         )
 
-        return processed
+    return processed
 
 
 def main():
