@@ -37,11 +37,11 @@ end
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
 -- Change the Diagnostic symbols in the sign column (gutter)
-local signs = { Error = " ", Warn = "⚠", Hint = " ", Info = "󰙎" }
-for type, icon in pairs(signs) do
-	local hl = "DiagnosticSign" .. type
-	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-end
+-- local signs = { Error = " ", Warn = "⚠", Hint = " ", Info = "󰙎" }
+-- for type, icon in pairs(signs) do
+-- 	local hl = "DiagnosticSign" .. type
+-- 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+-- end
 
 -- Hide diagnostic virtual text by default, but toggle visibility with `lead:lh` command
 vim.diagnostic.config({
@@ -60,8 +60,8 @@ lspconfig["html"].setup({
 	on_attach = on_attach,
 })
 
--- configure typescript server with plugin
-typescript.setup({
+--configure typescript server with plugin
+lspconfig["ts_ls"].setup({
 	server = {
 		capabilities = capabilities,
 		on_attach = on_attach,
@@ -76,6 +76,12 @@ lspconfig["cssls"].setup({
 
 -- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+-- configure python server
+lspconfig["pyright"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })

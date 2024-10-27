@@ -1,5 +1,6 @@
-export ZSH="/home/thomas/.oh-my-zsh"
 
+
+export ZSH="/home/thomas/.oh-my-zsh"
 alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
@@ -7,10 +8,9 @@ alias tw="timew"
 alias z="cd /home/thomas/repos/eolas"
 alias zn="/home/thomas/repos/eolas/scripts/new_zk_note.sh"
 alias dot="cd /home/thomas/dotfiles"
-alias gpt="chatgpt-cli"
-alias ss="/home/thomas/dotfiles/scripts/screenshot.sh"
-alias SS="/home/thomas/dotfiles/scripts/delayed_screenshot.sh"
-
+alias ddb="aws dynamodb"
+alias zcom="/home/thomas/repos/eolas/scripts/auto_save.sh"
+alias sysobs="cd /home/thomas/repos/systems-obscure"
 # alias xhd="cd /run/media/thomas"
 # alias cs-update="/home/thomas/repos/eolas/_scripts/auto_save.sh"
 # alias cs-query="/home/thomas/repos/eolas/_scripts/query.sh"
@@ -27,8 +27,8 @@ plugins=(git npm fzf-tab zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
-export EDITOR='nvim'
 source ~/.env
+export EDITOR='nvim'
 source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="$HOME/.nvm"

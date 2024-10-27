@@ -20,6 +20,7 @@ telescope.setup({
 			},
 		},
 		file_ignore_patterns = {
+			"neuron/",
 			"img",
 			"node_modules",
 			".git",

@@ -22,13 +22,14 @@ mason_lspconfig.setup({
 	-- list of servers for mason to install
 	ensure_installed = {
 		"clangd",
-		"tsserver",
+		"ts_ls",
 		"html",
 		"cssls",
 		"bashls",
 		"dockerls",
 		"eslint",
-		"pyre",
+		--		"pyre",
+		"pyright",
 		"tailwindcss",
 		"lua_ls",
 		"jsonls",
@@ -49,6 +50,7 @@ mason_null_ls.setup({
 		"black",
 		"pylint",
 		"marksman",
+		"shfmt",
 	},
 
 	automatic_installation = true,

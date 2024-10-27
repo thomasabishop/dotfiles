@@ -20,6 +20,7 @@ null_ls.setup({
 		formatting.stylua, -- lua formatter
 		formatting.black,
 		diagnostics.ruff,
+		diagnostics.shellcheck,
 		-- diagnostics.pylint,
 		diagnostics.eslint_d.with({ -- js/ts linter
 			condition = function(utils)

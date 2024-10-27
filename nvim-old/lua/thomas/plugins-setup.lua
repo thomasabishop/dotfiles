@@ -1,4 +1,5 @@
 -- auto install packer if not installed
+
 local ensure_packer = function()
 	local fn = vim.fn
 	local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
@@ -41,15 +42,17 @@ return packer.startup(function(use)
 	-- 	"folke/noice.nvim",
 	-- 	requires = { "MunifTanjim/nui.nvim", "rcarriga/nvim-notify" },
 	-- })
+
 	use({ "epwalsh/obsidian.nvim", requires = { "nvim-lua/plenary.nvim" } })
-	use("ellisonleao/gruvbox.nvim")
-	use("sainnhe/gruvbox-material")
+	-- use("ellisonleao/gruvbox.nvim")
+	use("sainnhe/gruvbox-material") --
 	use("kdheepak/lazygit.nvim")
 	use("zk-org/zk-nvim")
-	use("ryanoasis/vim-devicons")
+	--	use("ryanoasis/vim-devicons")
 	use("tpope/vim-fugitive")
 	use("mechatroner/rainbow_csv")
 	-- use("rcarriga/nvim-notify")
+	use("lmburns/kimbox")
 	use("tpope/vim-markdown")
 	use("f-person/git-blame.nvim")
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
@@ -62,12 +65,12 @@ return packer.startup(function(use)
 	use("wakatime/vim-wakatime")
 	use("psliwka/vim-smoothie")
 	use("nvim-lua/plenary.nvim")
-	use("szw/vim-maximizer")
+	use("szw/vim-maximizer") 
 	use("tpope/vim-commentary")
-	use("tpope/vim-surround")
+	use("tpope/vim-surround") --
 	use("vim-scripts/ReplaceWithRegister")
 	use("nvim-tree/nvim-tree.lua")
-	use("nvim-lualine/lualine.nvim")
+	use("nvim-lualine/lualine.nvim") -- 
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" })
 	use({
@@ -75,12 +78,16 @@ return packer.startup(function(use)
 		requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
 	})
 	-- startup page
+	--use({
+	--	"goolord/alpha-nvim",
+	--	--		requires = { "nvim-tree/nvim-web-devicons" },
+	--	config = function()
+	--		require("alpha").setup(require("alpha.themes.startify").config)
+	--	end,
+	--})
+
 	use({
-		"goolord/alpha-nvim",
-		requires = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			require("alpha").setup(require("alpha.themes.startify").config)
-		end,
+		"lukas-reineke/indent-blankline.nvim",
 	})
 
 	-- autocompletion and snippets
@@ -98,10 +105,10 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	use({ "glepnir/lspsaga.nvim" })
 
 	use("jackguo380/vim-lsp-cxx-highlight")
-	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
+	--	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
 	-- formatting and linting
@@ -126,25 +133,36 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 
-	-- GitHub Copilot
-
-	use({
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		event = "InsertEnter",
-		config = function()
-			require("copilot").setup({})
-		end,
-	})
-
-	use({
-		"zbirenbaum/copilot-cmp",
-		after = { "copilot.lua" },
-		config = function()
-			require("copilot_cmp").setup()
-		end,
-	})
 	if packer_bootstrap then
 		require("packer").sync()
 	end
+
+	local highlight = {
+		"RainbowRed",
+		"RainbowYellow",
+		"RainbowBlue",
+		"RainbowOrange",
+		"RainbowGreen",
+		"RainbowViolet",
+		"RainbowCyan",
+	}
+
+	-- local hooks = require("ibl.hooks")
+	-- -- -- -- create the highlight groups in the highlight setup hook, so they are reset
+	-- -- -- -- every time the colorscheme changes
+	-- hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
+	-- 	vim.api.nvim_set_hl(0, "RainbowRed", { foreground = "#ea6962" })
+	-- 	vim.api.nvim_set_hl(0, "RainbowYellow", { foreground = "#d8a657" })
+	-- 	vim.api.nvim_set_hl(0, "RainbowBlue", { foreground = "#7daea3" })
+	-- 	vim.api.nvim_set_hl(0, "RainbowOrange", { foreground = "#e78a4e" })
+	-- 	vim.api.nvim_set_hl(0, "RainbowGreen", { foreground = "#a9b665" })
+	-- 	vim.api.nvim_set_hl(0, "RainbowViolet", { foreground = "#d3869b" })
+	-- 	vim.api.nvim_set_hl(0, "RainbowCyan", { foreground = "#89b482" })
+	-- end)
+
+	-- vim.g.rainbow_delimiters = { highlight = highlight }
+	-- require("ibl").setup({ indent = { highlight = highlight } })
+	-- hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
+
+	--	require("ibl").setup()
 end)

@@ -38,17 +38,19 @@ def main():
         if timer_active():
             output["text"] = "Timer running"
             output["class"] = "active"
+            print("ACTIVE")
         else:
             output["text"] = ""
             output["class"] = "inactive"
+            print("IDLE")
     except Exception as e:
         output["text"] = "Error"
 
-    print(json.dumps(output))
+    #print(output["text"])
+    #print(json.dumps(output))
 
 
 if __name__ == "__main__":
     main()
 
 
-print(timer_active())
