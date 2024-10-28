@@ -31,6 +31,8 @@ opt.wrap = false
 opt.formatoptions = "cro"
 opt.backspace = "indent,eol,start"
 opt.conceallevel = 0
+opt.spelllang = "en_gb"
+vim.opt.spell = true
 
 diagnostic.config({
 	virtual_text = false,
