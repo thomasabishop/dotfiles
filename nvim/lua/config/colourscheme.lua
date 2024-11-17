@@ -1,5 +1,8 @@
-vim.g.gruvbox_material_background = "medium"
-vim.g.gruvbox_material_enable_bold = 1
+local global = vim.g
+
+global.gruvbox_material_background = "medium"
+global.gruvbox_material_enable_bold = 0
+global.gruvbox_material_enable_italic = 1
 
 local function update_highlight_group(group, tbl)
 	local old_hl = vim.api.nvim_get_hl_by_name(group, true)

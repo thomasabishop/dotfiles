@@ -33,6 +33,7 @@ return {
 				"gitignore",
 				"c",
 				"python",
+				"hcl",
 			},
 			incremental_selection = {
 				enable = true,

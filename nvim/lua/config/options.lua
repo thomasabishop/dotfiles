@@ -2,6 +2,7 @@ local global = vim.g
 local opt = vim.opt
 local diagnostic = vim.diagnostic
 
+vim.api.nvim_set_hl(0, "@keyword.function.python", { italic = true })
 global.mapleader = ";"
 global.maplocalleader = "\\"
 global.lazyvim_picker = "telescope"
@@ -32,7 +33,7 @@ opt.formatoptions = "cro"
 opt.backspace = "indent,eol,start"
 opt.conceallevel = 0
 opt.spelllang = "en_gb"
-vim.opt.spell = true
+vim.opt.spell = false
 
 diagnostic.config({
 	virtual_text = false,

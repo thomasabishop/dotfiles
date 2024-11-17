@@ -5,7 +5,7 @@ alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
 alias tw="timew"
-alias z="cd /home/thomas/repos/eolas"
+alias z="cd /home/thomas/repos/eolas/zk"
 alias zn="/home/thomas/repos/eolas/scripts/new_zk_note.sh"
 alias dot="cd /home/thomas/dotfiles"
 alias ddb="aws dynamodb"
@@ -43,6 +43,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.local/bin:$PATH"
 
 # export OPENAI_API_KEY=${OPENAI_API_KEY}
-
-
-export PATH=$PATH:/home/thomas/.spicetify
+#
