@@ -5,6 +5,7 @@ alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
 alias tw="timew"
+alias zj="zellij"
 alias z="cd /home/thomas/repos/eolas/zk"
 alias zn="/home/thomas/repos/eolas/scripts/new_zk_note.sh"
 alias dot="cd /home/thomas/dotfiles"
@@ -44,3 +45,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # export OPENAI_API_KEY=${OPENAI_API_KEY}
 #
+
+if [ -e /home/thomas/.nix-profile/etc/profile.d/nix.sh ]; then . /home/thomas/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/thomas/.config/.dart-cli-completion/zsh-config.zsh ]] && . /home/thomas/.config/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
