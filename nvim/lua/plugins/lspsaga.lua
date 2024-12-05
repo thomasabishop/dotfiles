@@ -5,10 +5,11 @@ return {
 		"nvim-tree/nvim-web-devicons", -- optional
 	},
 	keys = {
-		-- { "<leader>gf", "<cmd>Lspsaga lsp_finder<CR>" },
-		-- { "<leader>gd", "<cmd>Lspsaga peek_definition<CR>" },
-		-- { "<leader>rn", "<leader>rn", "<cmd>Lspsaga rename<CR>" },
-		-- { "<leader>y", "<leader>rn", "<cmd>Lspsaga finder<CR>" },
+		--{ "<leader>ss", "<cmd>Lspsaga diagnostic_jump_next<CR>" },
+		{ "<leader>gf", "<cmd>Lspsaga lsp_finder<CR>" },
+		{ "<leader>gd", "<cmd>Lspsaga peek_definition<CR>" },
+		{ "<leader>rn", "<cmd>Lspsaga rename<CR>" },
+		{ "<leader>y", "<cmd>Lspsaga finder<CR>" },
 	},
 	config = function()
 		require("lspsaga").setup({
