@@ -5,11 +5,14 @@ return {
 		"nvim-tree/nvim-web-devicons", -- optional
 	},
 	keys = {
-		--{ "<leader>ss", "<cmd>Lspsaga diagnostic_jump_next<CR>" },
-		{ "<leader>gf", "<cmd>Lspsaga lsp_finder<CR>" },
-		{ "<leader>gd", "<cmd>Lspsaga peek_definition<CR>" },
-		{ "<leader>rn", "<cmd>Lspsaga rename<CR>" },
+
+		{ "<leader>K", "<cmd>Lspsaga hover_doc<CR>" },
 		{ "<leader>y", "<cmd>Lspsaga finder<CR>" },
+		{ "<leader>g", "<cmd>Lspsaga peek_definition<CR>" },
+		{ "<leader>gf", "<cmd>Lspsaga goto_definition<CR>", desc = "Go to definition" },
+		{ "<leader>rn", "<cmd>Lspsaga rename<CR>" },
+		{ "<leader>b", "<cmd>Lspsaga code_action<CR>", desc = "Code actions" },
+		{ "<leader>r", "<cmd>Lspsaga show_line_diagnostics<CR>", desc = "Show line diagnostics" },
 	},
 	config = function()
 		require("lspsaga").setup({
@@ -17,13 +20,30 @@ return {
 			definition = {
 				edit = "<CR>",
 			},
-			ui = {
-				colors = {
-					-- normal_bg = "#022746",
+			finder = {
+				keys = {
+					--				toggle_or_jump = "<Tab>",
+					quit = { "q", "<ESC>" },
+					vsplit = "v",
+					split = "s",
 				},
-				code_action = {
-					enable = false,
-				},
+			},
+			lightbulb = {
+				enable = true,
+				sign = true,
+				virtual_text = true,
+				sign_priority = 40,
+			},
+			hover = {
+				max_width = 0.6,
+				max_height = 0.4,
+			},
+			diagnostic = {
+				show_code_action = true,
+				show_source = true,
+				jump_num_shortcut = true,
+				max_width = 0.7,
+				max_height = 0.6,
 			},
 		})
 	end,
